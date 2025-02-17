@@ -122,6 +122,8 @@ REST_FRAMEWORK = {
 
 ROOT_URLCONF = 'cloudkitchen.urls'
 
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -144,28 +146,28 @@ WSGI_APPLICATION = 'cloudkitchen.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Database Configuration for MySQL
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',  # MySQL database engine
-        'NAME': config('DB_NAME'),            # Database name
-        'USER': config('DB_USER'),            # Database user
-        'PASSWORD': config('DB_PASSWORD'),    # Database password
-        'HOST': config('DB_HOST'),            # Database host (e.g., 'localhost' or '127.0.0.1')
-        'PORT': config('DB_PORT'),            # Database port (default is 3306 for MySQL)
-        'OPTIONS': {
-            'charset': 'utf8mb4',             # Use utf8mb4 for full Unicode support (including emojis)
-        },
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  # MySQL database engine
+#         'NAME': config('DB_NAME'),            # Database name
+#         'USER': config('DB_USER'),            # Database user
+#         'PASSWORD': config('DB_PASSWORD'),    # Database password
+#         'HOST': config('DB_HOST'),            # Database host (e.g., 'localhost' or '127.0.0.1')
+#         'PORT': config('DB_PORT'),            # Database port (default is 3306 for MySQL)
+#         'OPTIONS': {
+#             'charset': 'utf8mb4',             # Use utf8mb4 for full Unicode support (including emojis)
+#         },
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

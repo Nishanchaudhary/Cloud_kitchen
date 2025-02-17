@@ -137,7 +137,7 @@ class InitiatePaymentView(APIView):
             return Response({"error": "Failed to initiate payment"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def initiate_fonepay_payment(self, order, amount):
-        fonepay_url = config('FONEPAY_URL')  # Load from .env
+        fonepay_url = config('FONEPAY_URL')  
         payload = {
             'amount': amount,
             'order_id': order.id,
@@ -181,7 +181,7 @@ class PaymentCallbackView(APIView):
             return Response({"error": "An internal error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def verify_esewa_payment(self, transaction_id, order_id):
-        esewa_url = f"{config('ESEWA_URL')}/verify/{transaction_id}"  # Load from .env
+        esewa_url = f"{config('ESEWA_URL')}/verify/{transaction_id}"  
         try:
             response = requests.get(esewa_url)
             if response.status_code == 200 and response.json().get('status') == 'success':
@@ -196,9 +196,9 @@ class PaymentCallbackView(APIView):
             return Response({"error": "Payment verification failed"}, status=status.HTTP_400_BAD_REQUEST)
 
     def verify_khalti_payment(self, transaction_id, order_id):
-        khalti_url = f"{config('KHALTI_URL')}/verify/{transaction_id}"  # Load from .env
+        khalti_url = f"{config('KHALTI_URL')}/verify/{transaction_id}"  
         headers = {
-            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}',  # Load from .env
+            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}', 
         }
         try:
             response = requests.get(khalti_url, headers=headers)
@@ -214,7 +214,7 @@ class PaymentCallbackView(APIView):
             return Response({"error": "Payment verification failed"}, status=status.HTTP_400_BAD_REQUEST)
 
     def verify_fonepay_payment(self, transaction_id, order_id):
-        fonepay_url = f"{config('FONEPAY_URL')}/verify/{transaction_id}"  # Load from .env
+        fonepay_url = f"{config('FONEPAY_URL')}/verify/{transaction_id}"  
         try:
             response = requests.get(fonepay_url)
             if response.status_code == 200 and response.json().get('status') == 'success':
