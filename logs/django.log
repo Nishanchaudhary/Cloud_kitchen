@@ -1289,3 +1289,224 @@ WARNING 2025-03-04 12:30:04,932 basehttp "GET / HTTP/1.1" 404 2310
 WARNING 2025-03-04 12:30:08,255 log Not Found: /api/ kitchen
 WARNING 2025-03-04 12:30:08,257 basehttp "GET /api/%20kitchen HTTP/1.1" 404 4373
 INFO 2025-03-04 12:30:27,319 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 12:50:10,294 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 12:50:15,812 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 12:50:20,105 basehttp "GET /admin/api/user/ HTTP/1.1" 200 15031
+INFO 2025-03-04 12:50:20,170 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:25,045 basehttp "GET /admin/api/menucategory/ HTTP/1.1" 200 14150
+INFO 2025-03-04 12:50:25,080 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:27,774 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15041
+INFO 2025-03-04 12:50:27,810 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:29,297 basehttp "GET /admin/api/menucategory/ HTTP/1.1" 200 14150
+INFO 2025-03-04 12:50:29,328 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:30,962 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 15351
+INFO 2025-03-04 12:50:30,996 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:34,151 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14700
+INFO 2025-03-04 12:50:34,185 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:36,593 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 15351
+INFO 2025-03-04 12:50:36,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:37,784 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 14318
+INFO 2025-03-04 12:50:37,812 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 12:50:38,774 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 16917
+INFO 2025-03-04 12:50:38,801 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-03-04 12:50:38,809 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-04 12:55:03,332 log Not Found: /api/ login/ 
+WARNING 2025-03-04 12:55:03,332 basehttp "GET /api/%20login/%20 HTTP/1.1" 404 4375
+WARNING 2025-03-04 12:56:22,347 log Method Not Allowed: /api/register/
+WARNING 2025-03-04 12:56:22,348 basehttp "GET /api/register/ HTTP/1.1" 405 5567
+WARNING 2025-03-04 12:57:02,932 log Method Not Allowed: /api/register/
+WARNING 2025-03-04 12:57:02,932 basehttp "GET /api/register/ HTTP/1.1" 405 40
+WARNING 2025-03-04 12:59:15,301 log Bad Request: /api/register/
+WARNING 2025-03-04 12:59:15,301 basehttp "POST /api/register/ HTTP/1.1" 400 79
+WARNING 2025-03-04 13:01:51,963 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:01:51,963 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+WARNING 2025-03-04 13:02:06,703 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:02:06,704 basehttp "GET /api/login/ HTTP/1.1" 405 40
+WARNING 2025-03-04 13:02:18,118 log Bad Request: /api/login/
+WARNING 2025-03-04 13:02:18,119 basehttp "POST /api/login/ HTTP/1.1" 400 31
+WARNING 2025-03-04 13:03:17,332 log Method Not Allowed: /api/logout/
+WARNING 2025-03-04 13:03:17,333 basehttp "GET /api/logout/ HTTP/1.1" 405 5549
+INFO 2025-03-04 13:03:22,468 basehttp "OPTIONS /api/logout/ HTTP/1.1" 200 5815
+INFO 2025-03-04 13:03:25,870 basehttp "OPTIONS /api/logout/ HTTP/1.1" 200 5815
+WARNING 2025-03-04 13:06:07,002 log Method Not Allowed: /api/logout/
+WARNING 2025-03-04 13:06:07,003 basehttp "GET /api/logout/ HTTP/1.1" 405 40
+ERROR 2025-03-04 13:06:12,429 log Internal Server Error: /api/logout/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 49, in post
+    request.user.auth_token.delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'auth_token'
+ERROR 2025-03-04 13:06:12,435 basehttp "POST /api/logout/ HTTP/1.1" 500 94267
+WARNING 2025-03-04 13:06:19,557 log Method Not Allowed: /api/logout/
+WARNING 2025-03-04 13:06:19,557 basehttp "GET /api/logout/ HTTP/1.1" 405 40
+WARNING 2025-03-04 13:10:25,446 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:10:25,448 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+WARNING 2025-03-04 13:10:43,745 log Method Not Allowed: /api/register/
+WARNING 2025-03-04 13:10:43,748 basehttp "GET /api/register/ HTTP/1.1" 405 5567
+ERROR 2025-03-04 13:12:14,370 log Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 32, in post
+    token, _ = Token.objects.get_or_create(user=user)
+               ^^^^^^^^^^^^^
+AttributeError: type object 'Token' has no attribute 'objects'
+ERROR 2025-03-04 13:12:14,370 basehttp "POST /api/register/ HTTP/1.1" 500 98624
+INFO 2025-03-04 13:14:08,511 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\cloudkitchen\settings.py changed, reloading.
+INFO 2025-03-04 13:14:09,840 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-04 13:14:42,308 log Method Not Allowed: /api/register/
+WARNING 2025-03-04 13:14:42,310 basehttp "GET /api/register/ HTTP/1.1" 405 5567
+WARNING 2025-03-04 13:15:01,286 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:15:01,287 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+WARNING 2025-03-04 13:15:02,194 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:15:02,196 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+ERROR 2025-03-04 13:16:14,720 log Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: authtoken_token
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 42, in post
+    token, _ = Token.objects.get_or_create(user=user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: authtoken_token
+ERROR 2025-03-04 13:16:14,725 basehttp "POST /api/login/ HTTP/1.1" 500 171248
+INFO 2025-03-04 13:18:23,074 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-04 13:18:52,892 log Bad Request: /api/register/
+WARNING 2025-03-04 13:18:52,894 basehttp "POST /api/register/ HTTP/1.1" 400 5583
+WARNING 2025-03-04 13:19:07,156 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:19:07,158 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+WARNING 2025-03-04 13:19:08,262 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:19:08,265 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+INFO 2025-03-04 13:19:17,839 basehttp "POST /api/login/ HTTP/1.1" 200 5938
+INFO 2025-03-04 13:20:27,339 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 17608
+INFO 2025-03-04 13:20:27,377 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 13:20:28,549 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 17608
+INFO 2025-03-04 13:20:28,602 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 13:20:37,525 basehttp "GET /admin/ HTTP/1.1" 200 16490
+WARNING 2025-03-04 13:20:55,422 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:20:55,426 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+WARNING 2025-03-04 13:20:57,018 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:20:57,018 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+INFO 2025-03-04 13:21:12,690 basehttp "POST /admin/logout/ HTTP/1.1" 200 3559
+INFO 2025-03-04 13:21:15,117 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-04 13:21:15,167 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2025-03-04 13:21:15,189 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-03-04 13:21:28,716 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-04 13:21:28,742 basehttp "GET /admin/ HTTP/1.1" 200 16490
+WARNING 2025-03-04 13:21:40,756 log Method Not Allowed: /api/login/
+WARNING 2025-03-04 13:21:40,758 basehttp "GET /api/login/ HTTP/1.1" 405 5540
+INFO 2025-03-04 13:22:09,208 basehttp "POST /api/login/ HTTP/1.1" 200 5938
+WARNING 2025-03-04 13:22:14,472 log Method Not Allowed: /api/logout/
+WARNING 2025-03-04 13:22:14,476 basehttp "GET /api/logout/ HTTP/1.1" 405 5549
+WARNING 2025-03-04 13:22:18,326 log Method Not Allowed: /api/logout/
+WARNING 2025-03-04 13:22:18,329 basehttp "GET /api/logout/ HTTP/1.1" 405 5549
