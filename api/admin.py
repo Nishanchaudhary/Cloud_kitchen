@@ -5,6 +5,7 @@ from .models import (
     Review, Payment, Transaction
 )
 
+
 # User Management
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
@@ -58,7 +59,7 @@ class DeliveryAdmin(admin.ModelAdmin):
 # Customer Support & Notifications
 @admin.register(SupportTicket)
 class SupportTicketAdmin(admin.ModelAdmin):
-    list_display = ('user', 'subject', 'status', 'created_at')
+    list_display = ('user', 'subject','message', 'status', 'created_at')
     list_filter = ('status',)
     search_fields = ('user__username', 'subject')
 
@@ -80,3 +81,8 @@ class PaymentAdmin(admin.ModelAdmin):
 class TransactionAdmin(admin.ModelAdmin):
     list_display = ('payment', 'created_at')
     search_fields = ('payment__transaction_id',)
+
+# Customize Django Admin Titles
+admin.site.site_header = "Cloud Kitchen Admin"
+admin.site.site_title = "Cloud Kitchen Dashboard"
+admin.site.index_title = "Welcome to Cloud Kitchen"

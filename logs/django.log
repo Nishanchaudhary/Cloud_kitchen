@@ -921,3 +921,226 @@ INFO 2025-02-17 15:36:26,333 autoreload Watching for file changes with StatReloa
 WARNING 2025-02-17 15:36:29,613 log Not Found: /
 WARNING 2025-02-17 15:36:29,619 basehttp "GET / HTTP/1.1" 404 2310
 INFO 2025-02-17 15:36:34,237 basehttp "GET /api/kitchenrestaurant/ HTTP/1.1" 200 9651
+INFO 2025-03-03 20:13:27,288 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-03 20:13:32,230 log Not Found: /
+WARNING 2025-03-03 20:13:32,240 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-03 20:13:32,447 log Not Found: /favicon.ico/
+WARNING 2025-03-03 20:13:32,448 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-03 20:13:38,323 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-03 20:13:38,372 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-03 20:13:38,391 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,393 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,401 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,407 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,409 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,411 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:38,417 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:41,985 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-03 20:13:42,020 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,024 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,028 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,035 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,037 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,043 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,043 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,054 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,057 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,070 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,092 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:13:42,104 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-03-03 20:16:38,915 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+INFO 2025-03-03 20:17:14,892 basehttp "GET /api/kitchenrestaurant/ HTTP/1.1" 200 9651
+INFO 2025-03-03 20:17:24,357 basehttp "GET /api/kitchenmenucategory/ HTTP/1.1" 200 9782
+WARNING 2025-03-03 20:17:34,943 log Not Found: /media/category_images/Cold_Beverages.jpg
+WARNING 2025-03-03 20:17:34,944 basehttp "GET /media/category_images/Cold_Beverages.jpg HTTP/1.1" 404 2448
+INFO 2025-03-03 20:17:56,605 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 200 11376
+INFO 2025-03-03 20:18:19,469 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10218
+INFO 2025-03-03 20:18:39,019 basehttp "GET /api/kitchenOrderItem/ HTTP/1.1" 200 9428
+INFO 2025-03-03 20:18:49,591 basehttp "GET /api/kitchendelivery/ HTTP/1.1" 200 10611
+INFO 2025-03-03 20:19:00,756 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 9918
+INFO 2025-03-03 20:19:41,771 basehttp "GET /api/kitchenreview/ HTTP/1.1" 200 9940
+INFO 2025-03-03 20:20:16,980 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 9918
+INFO 2025-03-03 20:25:21,707 basehttp "GET /api/kitchen HTTP/1.1" 200 507
+INFO 2025-03-03 20:29:24,685 basehttp "GET /api/users/ HTTP/1.1" 200 129
+INFO 2025-03-03 20:30:58,489 basehttp "GET /api/kitchenrestaurant/ HTTP/1.1" 200 122
+INFO 2025-03-03 20:31:23,792 basehttp "GET /api/kitchenmenucategory/ HTTP/1.1" 200 238
+INFO 2025-03-03 20:32:58,723 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 161
+INFO 2025-03-03 20:39:23,523 basehttp "GET /api/kitchendelivery/ HTTP/1.1" 200 157
+INFO 2025-03-03 20:39:50,469 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 161
+INFO 2025-03-03 20:40:01,884 basehttp "GET /api/kitchenOrderItem/ HTTP/1.1" 200 47
+INFO 2025-03-03 20:42:34,667 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 161
+INFO 2025-03-03 20:43:16,084 basehttp "OPTIONS /api/kitchenorders/ HTTP/1.1" 200 1060
+WARNING 2025-03-03 20:43:44,014 log Method Not Allowed: /api/kitchenorders/
+WARNING 2025-03-03 20:43:44,016 basehttp "PATCH /api/kitchenorders/ HTTP/1.1" 405 42
+INFO 2025-03-03 20:43:52,427 basehttp "HEAD /api/kitchenorders/ HTTP/1.1" 200 0
+INFO 2025-03-03 20:44:10,116 basehttp "GET /api/kitchenreview/ HTTP/1.1" 200 387
+INFO 2025-03-03 20:44:53,780 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-03 20:44:53,807 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-03-03 20:45:06,461 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+INFO 2025-03-03 20:45:18,868 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-03 20:45:18,900 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-03 20:45:18,934 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:18,947 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:18,947 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,227 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15037
+INFO 2025-03-03 20:45:27,339 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,349 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,349 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,351 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,351 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,356 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,356 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,356 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,359 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,407 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,417 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:45:27,512 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:27,516 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:37,697 basehttp "GET /admin/api/order/1/change/ HTTP/1.1" 200 24629
+INFO 2025-03-03 20:45:37,727 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:37,732 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:45:37,736 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:37,736 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:37,744 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:45:37,813 basehttp "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO 2025-03-03 20:45:37,861 basehttp "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:57:50,716 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15037
+INFO 2025-03-03 20:57:50,798 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:57:57,108 basehttp "GET /admin/api/order/1/change/ HTTP/1.1" 200 24629
+INFO 2025-03-03 20:57:57,164 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:58:01,211 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15037
+INFO 2025-03-03 20:59:02,152 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 15028
+INFO 2025-03-03 20:59:02,188 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:06,189 basehttp "GET /admin/api/delivery/1/change/ HTTP/1.1" 200 18101
+INFO 2025-03-03 20:59:06,221 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:59:06,234 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-03-03 20:59:06,238 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:06,285 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:59:06,285 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:59:13,048 basehttp "GET /admin/api/menucategory/ HTTP/1.1" 200 14146
+INFO 2025-03-03 20:59:13,076 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:14,542 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 16913
+INFO 2025-03-03 20:59:14,564 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-03-03 20:59:14,569 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:29,738 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 14314
+INFO 2025-03-03 20:59:29,764 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:33,329 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15037
+INFO 2025-03-03 20:59:33,350 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:36,319 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 14314
+INFO 2025-03-03 20:59:36,342 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:38,235 basehttp "GET /admin/api/order/ HTTP/1.1" 200 15037
+INFO 2025-03-03 20:59:38,255 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:55,349 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 15347
+INFO 2025-03-03 20:59:55,370 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 20:59:59,514 basehttp "GET /admin/api/payment/1/change/ HTTP/1.1" 200 16500
+INFO 2025-03-03 20:59:59,537 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:00:18,210 basehttp "GET /admin/api/restaurant/ HTTP/1.1" 200 13798
+INFO 2025-03-03 21:00:18,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:00:25,398 basehttp "GET /admin/api/review/ HTTP/1.1" 200 14387
+INFO 2025-03-03 21:00:25,430 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:00:28,349 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14500
+INFO 2025-03-03 21:00:28,376 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:00:48,938 basehttp "GET /admin/api/transaction/ HTTP/1.1" 200 11947
+INFO 2025-03-03 21:00:48,967 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:00:52,668 basehttp "GET /admin/api/transaction/add/ HTTP/1.1" 200 14160
+INFO 2025-03-03 21:00:52,690 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:01:06,172 basehttp "GET /admin/api/payment/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8235
+INFO 2025-03-03 21:01:06,194 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:01:27,649 basehttp "GET /admin/api/user/ HTTP/1.1" 200 15027
+INFO 2025-03-03 21:01:27,673 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:01:37,888 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11937
+INFO 2025-03-03 21:01:37,916 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:01:40,345 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 18266
+INFO 2025-03-03 21:01:40,376 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-03 21:01:40,400 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+INFO 2025-03-03 21:01:40,406 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-03-03 21:01:40,443 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-03-03 21:01:40,453 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-03-03 21:01:40,457 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-03-03 21:02:04,801 basehttp "GET /admin/api/ HTTP/1.1" 200 11096
+INFO 2025-03-03 21:02:09,738 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 07:56:59,289 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:57:00,947 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:57:18,391 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:57:19,291 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:57:23,680 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:57:24,624 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:57:28,918 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:57:29,807 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:57:32,995 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:57:33,950 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:58:04,803 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:58:05,803 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:58:07,858 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:58:08,778 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:58:29,857 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:58:30,807 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:58:50,060 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 07:58:50,927 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 07:59:15,362 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 07:59:15,402 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,403 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,410 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,410 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,413 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,430 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,430 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,434 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-03-04 07:59:15,452 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:00:35,162 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:00:40,744 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:41,882 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:42,062 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:42,244 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:42,472 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:50,574 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+INFO 2025-03-04 08:00:54,504 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:54,692 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:54,882 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:55,069 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:00:55,297 basehttp "GET /admin/ HTTP/1.1" 200 15600
+INFO 2025-03-04 08:01:03,882 basehttp "GET /admin/api/ HTTP/1.1" 200 11096
+INFO 2025-03-04 08:01:09,662 basehttp "GET /admin/api/user/ HTTP/1.1" 200 15027
+INFO 2025-03-04 08:01:09,698 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,726 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,726 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,733 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,740 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,745 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,746 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,752 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,760 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,763 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 08:01:09,766 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,797 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-03-04 08:01:09,800 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-04 08:04:08,992 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:04:10,340 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:04:12,600 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:04:13,590 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:04:23,264 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:04:24,188 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:04:27,278 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:04:28,308 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:04:36,825 basehttp "GET /admin/ HTTP/1.1" 200 15614
+WARNING 2025-03-04 08:05:47,753 log Not Found: /
+WARNING 2025-03-04 08:05:47,755 basehttp "GET / HTTP/1.1" 404 2310
+INFO 2025-03-04 08:05:50,180 basehttp "GET /admin/ HTTP/1.1" 200 15614
+INFO 2025-03-04 08:06:32,533 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 15032
+INFO 2025-03-04 08:06:32,593 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 08:06:54,702 basehttp "GET /admin/ HTTP/1.1" 200 15614
+INFO 2025-03-04 08:07:06,628 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14504
+INFO 2025-03-04 08:07:06,677 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 08:07:27,115 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 08:07:30,409 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 9918
+INFO 2025-03-04 08:08:26,394 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14504
+INFO 2025-03-04 08:08:26,428 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 08:12:09,039 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:12:10,065 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:12:14,170 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\admin.py changed, reloading.
+INFO 2025-03-04 08:12:15,244 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 08:12:23,030 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14700
+INFO 2025-03-04 08:12:23,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 08:12:26,428 basehttp "GET /admin/ HTTP/1.1" 200 15614
+INFO 2025-03-04 08:12:27,502 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14700
