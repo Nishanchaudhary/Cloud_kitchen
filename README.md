@@ -64,16 +64,18 @@ By default, the project uses SQLite. If you want to use MySQL:
 1. Install MySQL and create a database.
 2. Update `settings.py`:
    ```python
-   DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.mysql',
-           'NAME': 'your_db_name',
-           'USER': 'your_db_user',
-           'PASSWORD': 'your_db_password',
-           'HOST': 'localhost',
-           'PORT': '3306',
-       }
-   }
+  DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # MySQL database engine
+        'NAME': config('DB_NAME'),            # Database name
+        'USER': config('DB_USER'),            # Database user
+        'PASSWORD': config('DB_PASSWORD'),    # Database password
+        'HOST': config('DB_HOST'),            # Database host (e.g., 'localhost')
+        'PORT': config('DB_PORT'),            # Database port (default is 3306 for MySQL)
+        'OPTIONS': {
+            'charset': 'utf8mb4',             # Use utf8mb4 for full Unicode support 
+        },
+    }}
    ```
 
 ### **Step 5: Run Migrations**
