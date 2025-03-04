@@ -1144,3 +1144,93 @@ INFO 2025-03-04 08:12:23,030 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 2
 INFO 2025-03-04 08:12:23,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-03-04 08:12:26,428 basehttp "GET /admin/ HTTP/1.1" 200 15614
 INFO 2025-03-04 08:12:27,502 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 14700
+INFO 2025-03-04 08:37:05,150 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-04 08:37:11,375 log Bad Request: /api/kitchenorders/
+WARNING 2025-03-04 08:37:11,375 basehttp "POST /api/kitchenorders/ HTTP/1.1" 400 77
+INFO 2025-03-04 08:37:33,126 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 161
+WARNING 2025-03-04 08:37:52,979 log Bad Request: /api/kitchenorders/
+WARNING 2025-03-04 08:37:52,980 basehttp "POST /api/kitchenorders/ HTTP/1.1" 400 77
+INFO 2025-03-04 08:38:07,739 basehttp "GET /api/kitchenOrderItem/ HTTP/1.1" 200 47
+WARNING 2025-03-04 08:38:15,835 log Bad Request: /api/kitchenOrderItem/
+WARNING 2025-03-04 08:38:15,836 basehttp "POST /api/kitchenOrderItem/ HTTP/1.1" 400 116
+INFO 2025-03-04 08:38:24,447 basehttp "GET /api/kitchenOrderItem/ HTTP/1.1" 200 47
+INFO 2025-03-04 09:55:37,063 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-04 09:55:43,058 log Not Found: /
+WARNING 2025-03-04 09:55:43,071 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-04 09:55:43,222 log Not Found: /favicon.ico/
+WARNING 2025-03-04 09:55:43,227 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-04 09:55:51,489 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+WARNING 2025-03-04 09:55:58,080 log Not Found: /api/
+WARNING 2025-03-04 09:55:58,082 basehttp "GET /api/ HTTP/1.1" 404 4118
+WARNING 2025-03-04 09:56:11,505 log Not Found: /api/admin
+WARNING 2025-03-04 09:56:11,565 basehttp "GET /api/admin HTTP/1.1" 404 4133
+INFO 2025-03-04 09:57:14,688 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+WARNING 2025-03-04 09:57:34,329 log Not Found: /api/invoice
+WARNING 2025-03-04 09:57:34,331 basehttp "GET /api/invoice HTTP/1.1" 404 4139
+INFO 2025-03-04 09:57:55,503 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+INFO 2025-03-04 09:58:26,010 basehttp "GET /api/users/?format=api HTTP/1.1" 200 10317
+INFO 2025-03-04 09:58:29,514 basehttp "GET /api/users/?format=api HTTP/1.1" 200 10317
+INFO 2025-03-04 09:58:52,262 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 09:59:25,793 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 9918
+INFO 2025-03-04 10:00:27,842 basehttp "GET /admin/ HTTP/1.1" 200 15614
+INFO 2025-03-04 10:01:01,115 basehttp "GET /admin/api/user/ HTTP/1.1" 200 15031
+INFO 2025-03-04 10:01:01,241 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 10:01:07,430 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+WARNING 2025-03-04 10:03:54,398 log Not Found: /api/
+WARNING 2025-03-04 10:03:54,398 basehttp "GET /api/ HTTP/1.1" 404 4118
+INFO 2025-03-04 10:04:12,432 basehttp "GET /api/users/ HTTP/1.1" 200 10251
+INFO 2025-03-04 10:05:09,015 basehttp "GET /api/users/ HTTP/1.1" 200 129
+INFO 2025-03-04 10:05:22,137 basehttp "GET /api/users/ HTTP/1.1" 200 129
+WARNING 2025-03-04 10:05:34,835 log Bad Request: /api/users/
+WARNING 2025-03-04 10:05:34,836 basehttp "POST /api/users/ HTTP/1.1" 400 40
+INFO 2025-03-04 10:06:06,270 basehttp "GET /api/kitchen HTTP/1.1" 200 507
+INFO 2025-03-04 10:11:31,400 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-04 10:11:32,629 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:27:09,939 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-04 11:27:16,397 log Not Found: /
+WARNING 2025-03-04 11:27:16,401 basehttp "GET / HTTP/1.1" 404 2310
+INFO 2025-03-04 11:27:23,168 basehttp "GET /api/users/ HTTP/1.1" 200 10999
+WARNING 2025-03-04 11:27:59,112 log Not Found: /api/
+WARNING 2025-03-04 11:27:59,113 basehttp "GET /api/ HTTP/1.1" 404 4347
+WARNING 2025-03-04 11:28:18,832 log Not Found: /api/ login/
+WARNING 2025-03-04 11:28:18,833 basehttp "GET /api/%20login/ HTTP/1.1" 404 4370
+WARNING 2025-03-04 11:30:31,615 log Not Found: /api/
+WARNING 2025-03-04 11:30:31,617 basehttp "GET /api/ HTTP/1.1" 404 4347
+INFO 2025-03-04 11:30:35,099 basehttp "GET /api/users/ HTTP/1.1" 200 10999
+INFO 2025-03-04 11:31:03,404 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-04 11:31:04,296 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:31:11,696 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-04 11:31:13,068 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:32:54,638 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\serializers.py changed, reloading.
+INFO 2025-03-04 11:32:55,549 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:35:29,613 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:36:41,225 basehttp "GET /api/kitchen HTTP/1.1" 200 507
+WARNING 2025-03-04 11:36:48,858 log Not Found: /api/
+WARNING 2025-03-04 11:36:48,859 basehttp "GET /api/ HTTP/1.1" 404 4347
+WARNING 2025-03-04 11:37:00,116 log Not Found: /api
+WARNING 2025-03-04 11:37:00,118 basehttp "GET /api HTTP/1.1" 404 2337
+INFO 2025-03-04 11:37:36,613 basehttp "GET /api/users/ HTTP/1.1" 200 204
+INFO 2025-03-04 11:38:16,462 basehttp "GET /api/kitchen HTTP/1.1" 200 507
+INFO 2025-03-04 11:38:26,514 basehttp "GET /api/users/ HTTP/1.1" 200 204
+INFO 2025-03-04 11:38:51,341 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 161
+INFO 2025-03-04 11:45:32,933 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\serializers.py changed, reloading.
+INFO 2025-03-04 11:45:34,018 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:45:36,267 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\serializers.py changed, reloading.
+INFO 2025-03-04 11:45:37,191 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:45:51,548 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\models.py changed, reloading.
+INFO 2025-03-04 11:45:52,505 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:45:53,768 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\models.py changed, reloading.
+INFO 2025-03-04 11:45:54,864 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:45:56,131 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\models.py changed, reloading.
+INFO 2025-03-04 11:45:57,480 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:45:59,803 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\models.py changed, reloading.
+INFO 2025-03-04 11:46:01,330 autoreload Watching for file changes with StatReloader
+INFO 2025-03-04 11:46:14,856 basehttp "GET /admin/api/user/ HTTP/1.1" 200 15031
+INFO 2025-03-04 11:46:14,971 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-04 11:46:24,810 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 11:46:27,065 basehttp "GET /api/kitchen HTTP/1.1" 200 6555
+INFO 2025-03-04 11:46:30,453 basehttp "GET /api/kitchenrestaurant/ HTTP/1.1" 200 9651
+INFO 2025-03-04 11:46:34,486 basehttp "GET /api/kitchenmenucategory/ HTTP/1.1" 200 9782
+INFO 2025-03-04 11:46:39,513 basehttp "GET /api/kitchenOrderItem/ HTTP/1.1" 200 9428
+INFO 2025-03-04 11:46:44,223 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 9918
+INFO 2025-03-04 11:46:49,528 basehttp "GET /api/kitchenreview/ HTTP/1.1" 200 9940

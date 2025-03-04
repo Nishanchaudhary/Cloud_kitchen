@@ -2,7 +2,7 @@ import os
 import logging
 import requests
 from .models import *
-from .models import User
+from api.models import User 
 from .serializers import *
 from decouple import config
 from django.conf import settings
@@ -11,15 +11,44 @@ from rest_framework import viewsets
 from reportlab.pdfgen import canvas
 from django.http import HttpResponse
 from rest_framework.views import APIView
+from .serializers import UserSerializer
 from reportlab.lib.pagesizes import letter
 from rest_framework.response import Response
+from rest_framework.authtoken.models import Token
 from django.core.exceptions import ValidationError
+from django.contrib.auth import authenticate, logout
 
 
 # User management
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+class RegisterView(APIView):
+    def post(self, request):
+        serializer = UserSerializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.save()
+            token, _ = Token.objects.get_or_create(user=user)
+            return Response({'token': token.key, 'user': serializer.data}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class LoginView(APIView):
+    def post(self, request):
+        username = request.data.get('username')
+        password = request.data.get('password')
+        user = authenticate(username=username, password=password)
+        if user:
+            token, _ = Token.objects.get_or_create(user=user)
+            serializer = UserSerializer(user)
+            return Response({'token': token.key, 'user': serializer.data}, status=status.HTTP_200_OK)
+        return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
+
+class LogoutView(APIView):
+    def post(self, request):
+        request.user.auth_token.delete() 
+        logout(request)  
+        return Response({'message': 'Successfully logged out'}, status=status.HTTP_200_OK)
 
 # Restaurant & Menu Management
 

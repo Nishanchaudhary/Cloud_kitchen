@@ -1,13 +1,31 @@
-from rest_framework import serializers
-from django.contrib.auth.models import User
 from .models import *
+from api.models import User
+from rest_framework import serializers
+from django.contrib.auth.password_validation import validate_password
+
 
 # User management
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'role', 'phone_number', 'address']
+        fields = ['id', 'username', 'email', 'password', 'role', 'phone_number', 'address', 'profile_picture']
+        extra_kwargs = {'password': {'write_only': True}}
 
+    def validate_password(self, value):
+        validate_password(value)
+        return value
+
+    def create(self, validated_data):
+        user = User.objects.create_user(
+            username=validated_data['username'],
+            email=validated_data['email'],
+            password=validated_data['password'],
+            role=validated_data.get('role', 'customer'), 
+            phone_number=validated_data.get('phone_number', ''),
+            address=validated_data.get('address', ''),
+            profile_picture=validated_data.get('profile_picture', None),
+        )
+        return user
 # Restaurant & Menu Management
 
 class RestaurantSerializer(serializers.ModelSerializer):
