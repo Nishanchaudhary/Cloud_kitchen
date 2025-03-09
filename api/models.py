@@ -143,3 +143,11 @@ class Transaction(models.Model):
 
     def __str__(self):
         return f"Transaction for Payment {self.payment.transaction_id}"
+
+class Invoice(models.Model):
+    order = models.OneToOneField(Order, on_delete=models.CASCADE,  unique=True, related_name='invoice')
+    invoice_file = models.FileField(upload_to='invoices/')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Invoice for Order #{self.order.id}"

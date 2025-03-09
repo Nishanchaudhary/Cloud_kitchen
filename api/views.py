@@ -2,9 +2,10 @@ import os
 import logging
 import requests
 from .models import *
-from api.models import User 
 from .serializers import *
+from io import BytesIO 
 from decouple import config
+from api.models import User
 from django.conf import settings
 from rest_framework import status
 from rest_framework import viewsets
@@ -13,18 +14,32 @@ from django.http import HttpResponse
 from rest_framework.views import APIView
 from .serializers import UserSerializer
 from reportlab.lib.pagesizes import letter
+from django.core.files.base import ContentFile
 from rest_framework.response import Response
+from rest_framework.decorators import action
+from django.shortcuts import get_object_or_404
 from rest_framework.authtoken.models import Token
+from django.views.decorators.csrf import csrf_protect
+from django.utils.decorators import method_decorator
 from django.core.exceptions import ValidationError
 from django.contrib.auth import authenticate, logout
+from reportlab.lib.styles import getSampleStyleSheet
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
 
-# User management
+
+# Set up logging
+logger = logging.getLogger(__name__)
+
+# User Management
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
 
 class RegisterView(APIView):
+    @method_decorator(csrf_protect)
     def post(self, request):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
@@ -34,6 +49,9 @@ class RegisterView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginView(APIView):
+    throttle_classes = [AnonRateThrottle]
+
+    @method_decorator(csrf_protect)
     def post(self, request):
         username = request.data.get('username')
         password = request.data.get('password')
@@ -45,55 +63,98 @@ class LoginView(APIView):
         return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
 
 class LogoutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    @method_decorator(csrf_protect)
     def post(self, request):
-        request.user.auth_token.delete() 
-        logout(request)  
+        request.user.auth_token.delete()
+        logout(request)
         return Response({'message': 'Successfully logged out'}, status=status.HTTP_200_OK)
 
 # Restaurant & Menu Management
-
 class RestaurantViewSet(viewsets.ModelViewSet):
     queryset = Restaurant.objects.all()
     serializer_class = RestaurantSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
 
 class MenuCategoryViewSet(viewsets.ModelViewSet):
     queryset = MenuCategory.objects.all()
     serializer_class = MenuCategorySerializer
+    permission_classes = [IsAuthenticated]
 
 class MenuItemViewSet(viewsets.ModelViewSet):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
+    permission_classes = [IsAuthenticated]
 
 # Order Management
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
+    permission_classes = [IsAuthenticated]
 
-class OrderItemViewSet(viewsets.ModelViewSet):
-    queryset = OrderItem.objects.all()
-    serializer_class = OrderItemSerializer
+class OrderItemCreateView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, order_id):
+        order = get_object_or_404(Order, id=order_id)
+        serializer = OrderItemSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(order=order)
+            order.total_amount = sum(item.menu_item.price * item.quantity for item in order.items.all())
+            order.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class OrderItemUpdateView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def put(self, request, order_id, item_id):
+        order_item = get_object_or_404(OrderItem, id=item_id, order_id=order_id)
+        serializer = OrderItemSerializer(order_item, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            order = order_item.order
+            order.total_amount = sum(item.menu_item.price * item.quantity for item in order.items.all())
+            order.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class OrderItemDeleteView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def delete(self, request, order_id, item_id):
+        order_item = get_object_or_404(OrderItem, id=item_id, order_id=order_id)
+        order = order_item.order
+        order_item.delete()
+        order.total_amount = sum(item.menu_item.price * item.quantity for item in order.items.all())
+        order.save()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 # Delivery Management
 class DeliveryViewSet(viewsets.ModelViewSet):
     queryset = Delivery.objects.all()
     serializer_class = DeliverySerializer
+    permission_classes = [IsAuthenticated]
 
 # Customer Support & Notifications
 class SupportTicketViewSet(viewsets.ModelViewSet):
     queryset = SupportTicket.objects.all()
     serializer_class = SupportTicketSerializer
+    permission_classes = [IsAuthenticated]
 
 # Reviews & Ratings
 class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
 
-#payment and transaction
-
-# Set up logging
-logger = logging.getLogger(__name__)
-
+# Payment and Transaction
 class InitiatePaymentView(APIView):
+    permission_classes = [IsAuthenticated]
+    throttle_classes = [UserRateThrottle]
+
+    @method_decorator(csrf_protect)
     def post(self, request, order_id):
         try:
             # Validate order_id
@@ -126,7 +187,7 @@ class InitiatePaymentView(APIView):
             return Response({"error": "An internal error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def initiate_esewa_payment(self, order, amount):
-        esewa_url = config('ESEWA_URL')  # Load from .env
+        esewa_url = config('ESEWA_URL')  
         payload = {
             'amount': amount,
             'order_id': order.id,
@@ -134,7 +195,7 @@ class InitiatePaymentView(APIView):
             'failure_url': config('ESEWA_FAILURE_URL'),
         }
         try:
-            response = requests.post(esewa_url, data=payload)
+            response = requests.post(esewa_url, data=payload, verify=True)  
             if response.status_code == 200:
                 return Response({"payment_url": response.json().get('payment_url')})
             else:
@@ -145,9 +206,9 @@ class InitiatePaymentView(APIView):
             return Response({"error": "Failed to initiate payment"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def initiate_khalti_payment(self, order, amount):
-        khalti_url = config('KHALTI_URL')  # Load from .env
+        khalti_url = config('KHALTI_URL')  
         headers = {
-            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}',  # Load from .env
+            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}',  
         }
         payload = {
             'amount': int(amount * 100),  # Convert to paisa
@@ -155,7 +216,7 @@ class InitiatePaymentView(APIView):
             'return_url': config('KHALTI_RETURN_URL'),
         }
         try:
-            response = requests.post(khalti_url, headers=headers, json=payload)
+            response = requests.post(khalti_url, headers=headers, json=payload, verify=True)  # Ensure HTTPS
             if response.status_code == 200:
                 return Response({"payment_url": response.json().get('payment_url')})
             else:
@@ -173,7 +234,7 @@ class InitiatePaymentView(APIView):
             'return_url': config('FONEPAY_RETURN_URL'),
         }
         try:
-            response = requests.post(fonepay_url, data=payload)
+            response = requests.post(fonepay_url, data=payload, verify=True) 
             if response.status_code == 200:
                 return Response({"payment_url": response.json().get('payment_url')})
             else:
@@ -184,6 +245,7 @@ class InitiatePaymentView(APIView):
             return Response({"error": "Failed to initiate payment"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class PaymentCallbackView(APIView):
+    @method_decorator(csrf_protect)
     def post(self, request):
         try:
             # Validate input data
@@ -212,7 +274,7 @@ class PaymentCallbackView(APIView):
     def verify_esewa_payment(self, transaction_id, order_id):
         esewa_url = f"{config('ESEWA_URL')}/verify/{transaction_id}"  
         try:
-            response = requests.get(esewa_url)
+            response = requests.get(esewa_url, verify=True) 
             if response.status_code == 200 and response.json().get('status') == 'success':
                 self.update_payment_status(order_id, transaction_id, 'completed')
                 return Response({"message": "Payment successful"})
@@ -227,10 +289,10 @@ class PaymentCallbackView(APIView):
     def verify_khalti_payment(self, transaction_id, order_id):
         khalti_url = f"{config('KHALTI_URL')}/verify/{transaction_id}"  
         headers = {
-            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}', 
+            'Authorization': f'Key {config("KHALTI_SECRET_KEY")}',  
         }
         try:
-            response = requests.get(khalti_url, headers=headers)
+            response = requests.get(khalti_url, headers=headers, verify=True)  
             if response.status_code == 200 and response.json().get('status') == 'success':
                 self.update_payment_status(order_id, transaction_id, 'completed')
                 return Response({"message": "Payment successful"})
@@ -245,7 +307,7 @@ class PaymentCallbackView(APIView):
     def verify_fonepay_payment(self, transaction_id, order_id):
         fonepay_url = f"{config('FONEPAY_URL')}/verify/{transaction_id}"  
         try:
-            response = requests.get(fonepay_url)
+            response = requests.get(fonepay_url, verify=True) 
             if response.status_code == 200 and response.json().get('status') == 'success':
                 self.update_payment_status(order_id, transaction_id, 'completed')
                 return Response({"message": "Payment successful"})
@@ -275,20 +337,65 @@ class PaymentCallbackView(APIView):
             logger.error(f"Error updating payment status: {str(e)}")
             raise ValidationError(f"Failed to update payment status: {str(e)}")
 
+# Invoicing
+class DownloadInvoiceView(APIView):
+    permission_classes = [IsAuthenticated]
 
+    def get(self, request, order_id):
+        try:
+            
+            order = Order.objects.get(id=order_id)
+            if order.user != request.user: 
+                return Response({"error": "Unauthorized"}, status=status.HTTP_401_UNAUTHORIZED)
 
+            # Create a PDF response
+            response = HttpResponse(content_type='application/pdf')
+            response['Content-Disposition'] = f'attachment; filename="invoice_{order.id}.pdf"'
 
-#Invoicing
-def download_invoice(request, order_id):
-    order = Order.objects.get(id=order_id)
-    response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = f'attachment; filename="invoice_{order.id}.pdf"'
+            # Create a PDF document in memory
+            buffer = BytesIO()
+            pdf = canvas.Canvas(buffer, pagesize=letter)
+            styles = getSampleStyleSheet()
+            pdf.setFont("Helvetica-Bold", 16)
+            pdf.drawString(100, 750, "Cloud Kitchen")
+            pdf.setFont("Helvetica", 12)
+            pdf.drawString(100, 730, "Thank you for choosing us! We hope you enjoy your meal.")
+            pdf.drawString(100, 710, f"Invoice ID: #{order.id}")
+            pdf.drawString(100, 690, f"Customer Name: {order.user.username}")
+            pdf.drawString(100, 670, f"Restaurant: {order.restaurant.name}")
+            pdf.drawString(100, 650, f"Order Date: {order.created_at.strftime('%Y-%m-%d %H:%M:%S')}")
+            pdf.drawString(100, 630, f"Order Status: {order.get_status_display()}")
+            pdf.drawString(100, 610, f"Total Amount: {order.total_amount}")
+            pdf.drawString(100, 590, "Order Items:")
+            y = 570
+            for item in order.items.all():  # Access order items using the related_name 'items'
+                pdf.drawString(120, y, f"{item.menu_item.name} - {item.quantity} x {item.menu_item.price}")
+                y -= 20
 
-    # Create PDF
-    p = canvas.Canvas(response, pagesize=letter)
-    p.drawString(100, 750, f"Invoice for Order #{order.id}")
-    p.drawString(100, 730, f"Amount: {order.total_amount}")
-    p.showPage()
-    p.save()
+            # Save the PDF
+            pdf.showPage()
+            pdf.save()
+            pdf_content = buffer.getvalue()
+            buffer.close()
+            file_name = f"invoice_{order.id}.pdf"
+            file_path = os.path.join(settings.MEDIA_ROOT, "invoices", file_name)
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, "wb") as f:
+                f.write(pdf_content)
 
-    return response
+            # Store the file path in the database
+            invoice = Invoice.objects.create(
+                order=order,
+                invoice_file=file_path,
+            )
+            invoice.save()
+
+            # Return the PDF as a downloadable response
+            response.write(pdf_content)
+            return response
+
+        except Order.DoesNotExist:
+            return Response({"error": "Order not found"}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            logger.error(f"Error generating invoice: {str(e)}")
+            return Response({"error": "An internal error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

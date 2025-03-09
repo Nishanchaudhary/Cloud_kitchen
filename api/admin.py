@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import (
     User, Restaurant, MenuCategory, MenuItem,
     Order, OrderItem, Delivery, SupportTicket,
-    Review, Payment, Transaction
+    Review, Payment, Transaction, Invoice
 )
 
 
@@ -81,6 +81,22 @@ class PaymentAdmin(admin.ModelAdmin):
 class TransactionAdmin(admin.ModelAdmin):
     list_display = ('payment', 'created_at')
     search_fields = ('payment__transaction_id',)
+
+@admin.register(Invoice)
+class InvoiceAdmin(admin.ModelAdmin):
+    list_display = ('id', 'order', 'invoice_file', 'created_at')
+    list_filter = ('order', 'created_at')
+    search_fields = ('order__id', 'invoice_file')
+    readonly_fields = ('created_at',)
+    fieldsets = (
+        (None, {
+            'fields': ('order', 'invoice_file')
+        }),
+        ('Metadata', {
+            'fields': ('created_at',),
+            'classes': ('collapse',) 
+        }),
+    )
 
 # Customize Django Admin Titles
 admin.site.site_header = "Cloud Kitchen Admin"
