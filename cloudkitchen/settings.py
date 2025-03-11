@@ -148,6 +148,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'cloudkitchen.wsgi.application'
 
 
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('EMAIL_HOST')  # e.g., 'smtp.gmail.com'
+EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)  # e.g., 587 for TLS
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Your email address
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Your email password
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')  # Your email address
+
+# Frontend URL for password reset link
+FRONTEND_URL = config('FRONTEND_URL', default='http://127.0.0.1:8000/api/')  
+
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 

@@ -35,3 +35,274 @@ INFO 2025-03-09 21:33:26,111 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\ur
 INFO 2025-03-09 21:33:27,099 autoreload Watching for file changes with StatReloader
 INFO 2025-03-09 21:34:02,841 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
 INFO 2025-03-09 21:34:03,750 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:42:37,535 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-10 07:42:42,820 log Not Found: /
+WARNING 2025-03-10 07:42:42,821 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-10 07:42:43,015 log Not Found: /favicon.ico/
+WARNING 2025-03-10 07:42:43,038 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-10 07:43:03,139 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-10 07:43:05,975 basehttp "GET /api/users/ HTTP/1.1" 200 11623
+ERROR 2025-03-10 07:45:42,756 log Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-03-10 07:45:42,760 basehttp "POST /api/login HTTP/1.1" 500 72736
+WARNING 2025-03-10 07:47:05,553 log Unauthorized: /api/login/
+WARNING 2025-03-10 07:47:05,553 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-10 07:49:57,950 log Unauthorized: /api/users/
+WARNING 2025-03-10 07:49:57,950 basehttp "GET /api/users/ HTTP/1.1" 401 58
+INFO 2025-03-10 07:51:48,696 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+WARNING 2025-03-10 07:52:11,800 log Not Found: /api/orders/
+WARNING 2025-03-10 07:52:11,806 basehttp "GET /api/orders/ HTTP/1.1" 404 5594
+WARNING 2025-03-10 09:07:53,872 log Not Found: /api/orders/
+WARNING 2025-03-10 09:07:53,873 basehttp "GET /api/orders/ HTTP/1.1" 404 5594
+INFO 2025-03-11 16:44:53,083 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 16:44:56,508 log Not Found: /
+WARNING 2025-03-11 16:44:56,513 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-11 16:44:56,705 log Not Found: /favicon.ico/
+WARNING 2025-03-11 16:44:56,707 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-11 16:45:01,975 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-11 16:45:01,995 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:01,995 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:01,995 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,010 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,017 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,019 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,023 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,033 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,037 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,051 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,060 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-03-11 16:45:02,072 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2025-03-11 16:45:07,360 log Not Found: /api/
+WARNING 2025-03-11 16:45:07,362 basehttp "GET /api/ HTTP/1.1" 404 5179
+INFO 2025-03-11 16:45:23,811 basehttp "GET /api/forgot-password HTTP/1.1" 301 0
+WARNING 2025-03-11 16:45:23,870 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 16:45:23,872 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-11 16:46:51,579 basehttp "GET /api/reset-password/%3Cstr:uidb64%3E/%3Cstr:token%3E HTTP/1.1" 301 0
+WARNING 2025-03-11 16:46:51,600 log Method Not Allowed: /api/reset-password/<str:uidb64>/<str:token>/
+WARNING 2025-03-11 16:46:51,605 basehttp "GET /api/reset-password/%3Cstr:uidb64%3E/%3Cstr:token%3E/ HTTP/1.1" 405 5792
+WARNING 2025-03-11 16:47:13,963 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 16:47:13,964 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-11 16:49:53,596 log Method Not Allowed: /api/reset-password/<str:uidb64>/<str:token>/
+WARNING 2025-03-11 16:49:53,599 basehttp "GET /api/reset-password/%3Cstr:uidb64%3E/%3Cstr:token%3E/ HTTP/1.1" 405 5792
+INFO 2025-03-11 16:50:16,651 basehttp "GET /api/users HTTP/1.1" 301 0
+INFO 2025-03-11 16:50:16,699 basehttp "GET /api/users/ HTTP/1.1" 200 11623
+WARNING 2025-03-11 17:06:34,543 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:06:34,547 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+ERROR 2025-03-11 17:07:45,170 log Internal Server Error: /api/forgot-password/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 96, in post
+    send_mail(
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\Nishan Chaudhary\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\Nishan Chaudhary\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\Nishan Chaudhary\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-af520ba2b97sm5146254a12.43 - gsmtp')
+ERROR 2025-03-11 17:07:45,177 basehttp "POST /api/forgot-password/ HTTP/1.1" 500 150673
+WARNING 2025-03-11 17:17:45,256 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:17:45,258 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-11 17:18:42,166 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:20:08,173 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+INFO 2025-03-11 17:28:21,045 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:28:21,898 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:31:13,515 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\cloudkitchen\settings.py changed, reloading.
+INFO 2025-03-11 17:31:14,461 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 17:31:50,250 log Not Found: /reset-password/MQ/cmig5d-5d358ec35af7cc9d9dd1f813f7f7abba/
+WARNING 2025-03-11 17:31:50,252 basehttp "GET /reset-password/MQ/cmig5d-5d358ec35af7cc9d9dd1f813f7f7abba/ HTTP/1.1" 404 2502
+WARNING 2025-03-11 17:31:50,354 log Not Found: /favicon.ico
+WARNING 2025-03-11 17:31:50,356 basehttp "GET /favicon.ico HTTP/1.1" 404 2361
+WARNING 2025-03-11 17:32:35,145 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:32:35,149 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-11 17:32:38,748 log Not Found: /api/
+WARNING 2025-03-11 17:32:38,749 basehttp "GET /api/ HTTP/1.1" 404 5179
+INFO 2025-03-11 17:33:25,119 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\cloudkitchen\settings.py changed, reloading.
+INFO 2025-03-11 17:33:26,027 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 17:34:28,853 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:34:28,853 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-11 17:34:29,897 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:34:29,898 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+ERROR 2025-03-11 17:37:44,660 log Internal Server Error: /api/forgot-password/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 94, in post
+    uid = urlsafe_base64_encode(force_bytes(user.pk))
+          ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'urlsafe_base64_encode' is not defined. Did you mean: 'urlsafe_base64_decode'?
+ERROR 2025-03-11 17:37:44,667 basehttp "POST /api/forgot-password/ HTTP/1.1" 500 114957
+INFO 2025-03-11 17:42:32,132 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:42:33,120 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:42:39,918 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:42:40,721 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:43:39,577 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:43:41,021 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:44:20,154 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:44:21,072 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 17:44:57,719 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:44:57,719 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-11 17:46:54,618 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:46:56,170 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 17:49:47,687 log Bad Request: /api/forgot-password/
+WARNING 2025-03-11 17:49:47,688 basehttp "POST /api/forgot-password/ HTTP/1.1" 400 3765
+WARNING 2025-03-11 17:54:23,442 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 17:54:23,442 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-11 17:55:41,058 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 17:55:41,928 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 17:58:54,062 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+WARNING 2025-03-11 17:59:03,596 log Not Found: /api//reset-password/MQ/cmihxz-2f4ecd7074546563966e396c10d1ad9b/
+WARNING 2025-03-11 17:59:03,599 basehttp "GET /api//reset-password/MQ/cmihxz-2f4ecd7074546563966e396c10d1ad9b/ HTTP/1.1" 404 5356
+WARNING 2025-03-11 18:04:40,373 log Bad Request: /api/forgot-password/
+WARNING 2025-03-11 18:04:40,373 basehttp "POST /api/forgot-password/ HTTP/1.1" 400 5645
+INFO 2025-03-11 18:05:58,913 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+WARNING 2025-03-11 18:06:06,992 log Method Not Allowed: /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/
+WARNING 2025-03-11 18:06:06,995 basehttp "GET /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/ HTTP/1.1" 405 5828
+ERROR 2025-03-11 18:07:30,378 log Internal Server Error: /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 117, in post
+    uid = force_str(urlsafe_base64_decode(uidb64))
+                    ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'urlsafe_base64_decode' is not defined. Did you mean: 'urlsafe_base64_encode'?
+ERROR 2025-03-11 18:07:30,383 basehttp "POST /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/ HTTP/1.1" 500 116239
+INFO 2025-03-11 18:18:14,009 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 18:18:14,993 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 18:18:54,840 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 18:18:56,229 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 18:19:00,916 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 18:19:01,763 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 18:19:12,106 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 18:19:13,071 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 18:19:22,937 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 18:19:23,749 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 18:20:14,478 log Method Not Allowed: /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/
+WARNING 2025-03-11 18:20:14,482 basehttp "GET /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/ HTTP/1.1" 405 5828
+INFO 2025-03-11 18:21:26,914 basehttp "POST /api/reset-password/MQ/cmii9t-c0eed3a2914e94e8bd071a36cdcd24b9/ HTTP/1.1" 200 5804
+INFO 2025-03-11 18:25:32,796 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-11 18:25:32,851 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4164
+INFO 2025-03-11 18:25:32,871 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,871 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,875 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,882 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,887 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,888 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:32,894 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:50,808 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-11 18:25:50,854 basehttp "GET /admin/ HTTP/1.1" 200 17070
+INFO 2025-03-11 18:25:50,882 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:50,898 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 18:25:50,898 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0

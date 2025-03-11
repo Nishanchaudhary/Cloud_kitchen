@@ -1,3 +1,5 @@
+from django.utils.http import urlsafe_base64_encode  
+from django.utils.encoding import force_bytes 
 import os
 import logging
 import requests
@@ -11,9 +13,11 @@ from rest_framework import status
 from rest_framework import viewsets
 from reportlab.pdfgen import canvas
 from django.http import HttpResponse
+from django.core.mail import send_mail
 from rest_framework.views import APIView
 from .serializers import UserSerializer
 from reportlab.lib.pagesizes import letter
+from django.utils.encoding import force_str
 from django.core.files.base import ContentFile
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -24,6 +28,7 @@ from django.utils.decorators import method_decorator
 from django.core.exceptions import ValidationError
 from django.contrib.auth import authenticate, logout
 from reportlab.lib.styles import getSampleStyleSheet
+from django.contrib.auth.tokens import default_token_generator
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
@@ -70,6 +75,72 @@ class LogoutView(APIView):
         request.user.auth_token.delete()
         logout(request)
         return Response({'message': 'Successfully logged out'}, status=status.HTTP_200_OK)
+
+
+class ForgotPasswordView(APIView):
+    @method_decorator(csrf_protect)
+    def post(self, request):
+        email = request.data.get('email')
+        frontend_url = request.data.get('frontend_url')  
+
+        if not frontend_url:
+            return Response(
+                {'error': 'Frontend URL is required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        user = User.objects.filter(email=email).first()
+        if user:
+            token = default_token_generator.make_token(user)
+            uid = urlsafe_base64_encode(force_bytes(user.pk))
+            reset_link = f"{frontend_url}/reset-password/{uid}/{token}/"
+            send_mail(
+                'Password Reset Request',
+                f'Click the link to reset your password: {reset_link}',
+                settings.DEFAULT_FROM_EMAIL,  
+                [user.email],  
+                fail_silently=False,
+            )
+
+            return Response(
+                {'message': 'Password reset link sent to your email'}, 
+                status=status.HTTP_200_OK
+            )
+        return Response(
+            {'error': 'User with this email does not exist'}, 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+from django.utils.http import urlsafe_base64_decode
+class ResetPasswordView(APIView):
+    @method_decorator(csrf_protect)
+    def post(self, request, uidb64, token):
+        try:
+            # Decode the uidb64 and get the user
+            uid = force_str(urlsafe_base64_decode(uidb64))
+            user = User.objects.get(pk=uid)
+            
+            # Check if the token is valid for the user
+            if default_token_generator.check_token(user, token):
+                new_password = request.data.get('new_password')
+                
+                # Set the new password and save the user
+                user.set_password(new_password)
+                user.save()
+                
+                return Response(
+                    {'message': 'Password reset successfully'}, 
+                    status=status.HTTP_200_OK
+                )
+            else:
+                return Response(
+                    {'error': 'Invalid token'}, 
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+        except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+            return Response(
+                {'error': 'Invalid user'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
 # Restaurant & Menu Management
 class RestaurantViewSet(viewsets.ModelViewSet):
