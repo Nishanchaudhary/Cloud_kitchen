@@ -306,3 +306,956 @@ INFO 2025-03-11 18:25:50,854 basehttp "GET /admin/ HTTP/1.1" 200 17070
 INFO 2025-03-11 18:25:50,882 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
 INFO 2025-03-11 18:25:50,898 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
 INFO 2025-03-11 18:25:50,898 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:46:50,889 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 20:46:54,946 log Not Found: /
+WARNING 2025-03-11 20:46:54,947 basehttp "GET / HTTP/1.1" 404 2310
+INFO 2025-03-11 20:47:05,819 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-03-11 20:47:05,933 basehttp "GET /admin/ HTTP/1.1" 200 17070
+INFO 2025-03-11 20:47:16,452 basehttp "GET /admin/ HTTP/1.1" 200 17070
+WARNING 2025-03-11 20:47:31,532 log Not Found: /api/
+WARNING 2025-03-11 20:47:31,532 basehttp "GET /api/ HTTP/1.1" 404 5179
+WARNING 2025-03-11 20:47:47,510 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 20:47:47,515 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-11 20:47:48,825 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-11 20:47:48,831 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-11 20:48:29,947 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 14348
+INFO 2025-03-11 20:48:29,984 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:29,995 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:29,997 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,003 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,025 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,039 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,039 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,040 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,050 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,075 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,088 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,131 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:30,140 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,818 basehttp "GET /admin/authtoken/tokenproxy/1/change/ HTTP/1.1" 200 14891
+INFO 2025-03-11 20:48:33,872 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,872 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,879 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,905 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,915 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:33,965 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:48:36,587 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 14348
+INFO 2025-03-11 20:48:40,903 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 20:48:40,936 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:48:45,146 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-11 20:48:45,189 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:48:45,304 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-03-11 20:48:45,304 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-03-11 20:48:45,371 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:48:45,383 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:49:23,515 basehttp "GET /admin/api/invoice/ HTTP/1.1" 200 17086
+INFO 2025-03-11 20:49:23,558 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:49:26,863 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-11 20:49:26,920 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:49:28,784 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-11 20:49:28,813 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-03-11 20:49:28,822 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:49:30,765 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16471
+INFO 2025-03-11 20:49:30,798 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:49:48,849 basehttp "POST /admin/api/orderitem/ HTTP/1.1" 200 12780
+INFO 2025-03-11 20:49:48,921 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-03-11 20:49:50,725 basehttp "POST /admin/api/orderitem/ HTTP/1.1" 302 0
+INFO 2025-03-11 20:49:50,771 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16245
+INFO 2025-03-11 20:49:50,799 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:49:54,919 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-11 20:49:54,950 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:00,035 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 16454
+INFO 2025-03-11 20:50:00,065 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:02,603 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 16454
+INFO 2025-03-11 20:50:02,629 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:13,537 basehttp "GET /admin/api/restaurant/ HTTP/1.1" 200 14905
+INFO 2025-03-11 20:50:13,566 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:17,263 basehttp "GET /admin/api/restaurant/ HTTP/1.1" 200 14905
+INFO 2025-03-11 20:50:17,288 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:18,799 basehttp "GET /admin/api/review/ HTTP/1.1" 200 15494
+INFO 2025-03-11 20:50:18,823 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:24,539 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 15803
+INFO 2025-03-11 20:50:24,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:30,489 basehttp "GET /admin/api/transaction/ HTTP/1.1" 200 13054
+INFO 2025-03-11 20:50:30,519 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 20:50:34,399 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 20:50:34,429 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 21:01:32,186 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-11 21:01:37,653 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+WARNING 2025-03-11 21:04:02,633 log Not Found: /api/orders
+WARNING 2025-03-11 21:04:02,635 basehttp "GET /api/orders HTTP/1.1" 404 6180
+WARNING 2025-03-11 21:07:20,165 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:07:20,166 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6213
+WARNING 2025-03-11 21:11:24,994 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:11:25,004 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6213
+INFO 2025-03-11 21:13:11,321 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-11 21:13:11,437 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 21:13:23,079 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-11 21:13:23,133 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 21:13:30,865 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-11 21:13:30,896 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-11 21:34:06,260 log Not Found: /api/orders orders/1/items/1/
+WARNING 2025-03-11 21:34:06,261 basehttp "GET /api/orders%20orders/1/items/1/ HTTP/1.1" 404 6236
+INFO 2025-03-11 21:34:39,129 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:34:40,420 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:34:47,335 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:34:48,152 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 21:35:00,191 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:00,191 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+WARNING 2025-03-11 21:35:01,127 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:01,127 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+WARNING 2025-03-11 21:35:01,304 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:01,306 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+WARNING 2025-03-11 21:35:01,474 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:01,477 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+WARNING 2025-03-11 21:35:01,639 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:01,639 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+WARNING 2025-03-11 21:35:01,857 log Not Found: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:01,859 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 404 6192
+INFO 2025-03-11 21:35:13,033 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:35:13,874 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:35:16,024 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:35:16,895 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:35:19,029 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:35:19,999 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 21:35:27,909 log Unauthorized: /api/orders/1/items/1/
+WARNING 2025-03-11 21:35:27,909 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 401 3892
+INFO 2025-03-11 21:35:28,003 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-03-11 21:35:28,007 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-03-11 21:35:28,007 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-03-11 21:35:28,007 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-03-11 21:35:28,063 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-03-11 21:35:28,111 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-03-11 21:35:28,143 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-03-11 21:35:28,171 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-03-11 21:35:28,184 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-03-11 21:35:28,192 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-03-11 21:35:28,208 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-03-11 21:35:28,213 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-03-11 21:36:24,373 log Unauthorized: /api/orders/1/items/
+WARNING 2025-03-11 21:36:24,374 basehttp "GET /api/orders/1/items/ HTTP/1.1" 401 3768
+INFO 2025-03-11 21:43:18,880 basehttp "GET /api/login HTTP/1.1" 301 0
+WARNING 2025-03-11 21:43:18,888 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:18,888 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:27,671 log Not Found: /api/
+WARNING 2025-03-11 21:43:27,672 basehttp "GET /api/ HTTP/1.1" 404 5179
+WARNING 2025-03-11 21:43:42,020 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:42,021 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:54,800 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:54,801 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:54,964 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:54,964 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:55,137 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:55,139 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:55,377 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:55,382 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:43:57,692 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:43:57,694 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:44:03,826 log Not Found: /
+WARNING 2025-03-11 21:44:03,832 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-11 21:44:14,443 log Not Found: /api
+WARNING 2025-03-11 21:44:14,447 basehttp "GET /api HTTP/1.1" 404 2337
+WARNING 2025-03-11 21:44:19,153 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:44:19,156 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:44:25,001 log Not Found: /api/
+WARNING 2025-03-11 21:44:25,003 basehttp "GET /api/ HTTP/1.1" 404 5179
+WARNING 2025-03-11 21:44:39,297 log Not Found: /api/ login/
+WARNING 2025-03-11 21:44:39,298 basehttp "GET /api/%20login/ HTTP/1.1" 404 5202
+WARNING 2025-03-11 21:44:53,423 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:44:53,423 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:45:00,502 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:45:00,503 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:45:00,747 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:45:00,749 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 21:45:08,884 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 21:45:08,925 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 21:46:15,873 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 21:46:16,812 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 21:46:22,801 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:22,801 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:23,971 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:23,973 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:24,172 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:24,176 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:24,393 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:24,401 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:25,156 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:25,159 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:25,324 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:25,325 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:25,480 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:25,483 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:25,714 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:25,718 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:27,140 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:27,141 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:27,383 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:27,385 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:46:31,690 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:46:31,692 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 21:47:03,251 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 21:47:04,108 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:47:31,408 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:47:32,230 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:47:36,611 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:47:37,500 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:47:41,864 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-11 21:47:42,758 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 21:48:03,446 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 21:48:08,181 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:08,183 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:48:08,922 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:08,924 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:48:09,109 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:09,112 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:48:09,346 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:09,348 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:48:10,199 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:10,201 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 21:48:10,432 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:48:10,435 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 21:48:13,685 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 21:48:13,746 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-11 21:57:20,665 log Unauthorized: /api/register/
+WARNING 2025-03-11 21:57:20,667 basehttp "GET /api/register/ HTTP/1.1" 401 3729
+WARNING 2025-03-11 21:57:22,737 log Unauthorized: /api/register/
+WARNING 2025-03-11 21:57:22,741 basehttp "GET /api/register/ HTTP/1.1" 401 3729
+WARNING 2025-03-11 21:57:22,947 log Unauthorized: /api/register/
+WARNING 2025-03-11 21:57:22,950 basehttp "GET /api/register/ HTTP/1.1" 401 3729
+WARNING 2025-03-11 21:59:25,650 log Unauthorized: /api/logout/
+WARNING 2025-03-11 21:59:25,652 basehttp "GET /api/logout/ HTTP/1.1" 401 3719
+WARNING 2025-03-11 21:59:38,257 log Unauthorized: /api/login/
+WARNING 2025-03-11 21:59:38,268 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:06:59,060 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:07:00,079 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 22:07:26,435 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:07:27,606 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 22:07:37,253 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:07:38,257 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 22:07:42,671 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:07:43,740 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 22:07:55,856 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:07:55,861 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:07:58,746 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:07:58,748 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:07:58,903 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:07:58,907 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:07:59,063 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:07:59,063 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:07:59,297 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:07:59,301 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:08:00,426 log Unauthorized: /api/logout/
+WARNING 2025-03-11 22:08:00,428 basehttp "GET /api/logout/ HTTP/1.1" 401 3719
+WARNING 2025-03-11 22:08:02,070 log Unauthorized: /api/register/
+WARNING 2025-03-11 22:08:02,071 basehttp "GET /api/register/ HTTP/1.1" 401 3729
+WARNING 2025-03-11 22:08:03,022 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:08:03,022 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:08:17,696 log Not Found: /api/ login/
+WARNING 2025-03-11 22:08:17,697 basehttp "GET /api/%20login/ HTTP/1.1" 404 5203
+WARNING 2025-03-11 22:08:26,246 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:08:26,263 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:08:37,660 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:08:37,661 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:08:37,907 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:08:37,912 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:09:44,413 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:09:45,248 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 22:11:54,678 log Unauthorized: /api/users/
+WARNING 2025-03-11 22:11:54,679 basehttp "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:12:07,566 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:12:07,567 basehttp "GET /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:12:21,597 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:12:21,597 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:14:25,029 log Not Found: /login/
+WARNING 2025-03-11 22:14:25,030 basehttp "GET /login/ HTTP/1.1" 404 2346
+WARNING 2025-03-11 22:14:29,852 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:14:29,852 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:14:57,275 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:14:58,542 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 22:15:09,286 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:15:10,067 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 22:15:30,372 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:15:30,372 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+WARNING 2025-03-11 22:15:33,335 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:15:33,337 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:15:38,807 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:15:39,750 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 22:15:44,783 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:15:44,783 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:15:51,640 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:15:52,427 autoreload Watching for file changes with StatReloader
+INFO 2025-03-11 22:16:07,755 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-11 22:16:08,552 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-11 22:16:16,900 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:16:16,900 basehttp "GET /api/login/ HTTP/1.1" 401 3714
+INFO 2025-03-11 22:16:47,494 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 22:16:47,607 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:16:47,820 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-11 22:16:47,870 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:16:51,007 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 14348
+INFO 2025-03-11 22:16:54,756 basehttp "GET /admin/api/invoice/ HTTP/1.1" 200 17086
+INFO 2025-03-11 22:16:54,786 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:16:56,084 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-11 22:16:56,108 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:16:57,564 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-11 22:16:57,592 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:16:58,642 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-11 22:16:58,674 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:17:04,320 basehttp "GET /admin/auth/ HTTP/1.1" 200 5316
+INFO 2025-03-11 22:17:07,624 basehttp "GET /admin/auth/ HTTP/1.1" 200 5316
+INFO 2025-03-11 22:17:10,202 basehttp "GET /admin/auth/ HTTP/1.1" 200 5316
+INFO 2025-03-11 22:17:11,740 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-11 22:17:11,940 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-11 22:17:15,680 basehttp "GET /admin/ HTTP/1.1" 200 17025
+INFO 2025-03-11 22:17:15,764 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+WARNING 2025-03-11 22:24:34,699 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:24:34,700 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:24:41,781 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:24:41,782 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:24:48,531 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:24:48,533 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:24:52,395 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:24:52,396 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:24:56,743 log Unauthorized: /api/login/
+WARNING 2025-03-11 22:24:56,743 basehttp "POST /api/login/ HTTP/1.1" 401 58
+WARNING 2025-03-11 22:26:13,010 log Not Found: /api/
+WARNING 2025-03-11 22:26:13,011 basehttp "GET /api/ HTTP/1.1" 404 5180
+INFO 2025-03-11 22:31:49,213 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 14348
+INFO 2025-03-11 22:31:55,857 basehttp "GET /admin/authtoken/tokenproxy/1/change/ HTTP/1.1" 200 14891
+INFO 2025-03-11 22:31:55,909 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-11 22:31:59,579 basehttp "POST /admin/authtoken/tokenproxy/1/change/ HTTP/1.1" 302 0
+INFO 2025-03-11 22:31:59,607 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 14588
+INFO 2025-03-11 22:32:03,829 basehttp "GET /admin/authtoken/tokenproxy/1/change/ HTTP/1.1" 200 14891
+INFO 2025-03-11 22:32:07,683 basehttp "GET /admin/ HTTP/1.1" 200 17056
+INFO 2025-03-12 08:16:56,761 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-12 08:17:02,728 log Not Found: /
+WARNING 2025-03-12 08:17:02,731 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-12 08:17:02,897 log Not Found: /favicon.ico/
+WARNING 2025-03-12 08:17:02,899 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-12 08:17:11,426 basehttp "GET /admin/ HTTP/1.1" 200 17056
+INFO 2025-03-12 08:17:11,451 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-12 08:17:11,472 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-12 08:17:26,005 basehttp "GET /admin/ HTTP/1.1" 200 17056
+WARNING 2025-03-12 08:17:34,675 log Method Not Allowed: /api/login/
+WARNING 2025-03-12 08:17:34,679 basehttp "GET /api/login/ HTTP/1.1" 405 5575
+INFO 2025-03-12 08:47:02,054 basehttp "POST /api/login/ HTTP/1.1" 200 6012
+WARNING 2025-03-12 08:48:02,727 log Method Not Allowed: /api/register/
+WARNING 2025-03-12 08:48:02,728 basehttp "GET /api/register/ HTTP/1.1" 405 5602
+WARNING 2025-03-12 08:48:14,201 log Method Not Allowed: /api/logout/
+WARNING 2025-03-12 08:48:14,202 basehttp "GET /api/logout/ HTTP/1.1" 405 5584
+WARNING 2025-03-12 08:48:16,101 log Method Not Allowed: /api/logout/
+WARNING 2025-03-12 08:48:16,102 basehttp "GET /api/logout/ HTTP/1.1" 405 5584
+WARNING 2025-03-12 08:48:45,889 log Not Found: /api/
+WARNING 2025-03-12 08:48:45,896 basehttp "GET /api/ HTTP/1.1" 404 5180
+INFO 2025-03-12 08:48:53,626 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-12 08:49:12,224 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+INFO 2025-03-12 08:49:26,574 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 200 11411
+WARNING 2025-03-12 08:49:47,514 log Not Found: /api/ orders/
+WARNING 2025-03-12 08:49:47,515 basehttp "GET /api/%20orders/ HTTP/1.1" 404 5206
+WARNING 2025-03-12 08:50:01,092 log Not Found: /api/orders/
+WARNING 2025-03-12 08:50:01,098 basehttp "GET /api/orders/ HTTP/1.1" 404 6165
+INFO 2025-03-12 08:50:20,389 basehttp "GET /api/orders/1/items/1 HTTP/1.1" 301 0
+WARNING 2025-03-12 08:50:20,400 log Method Not Allowed: /api/orders/1/items/1/
+WARNING 2025-03-12 08:50:20,404 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 405 5895
+WARNING 2025-03-12 08:50:41,037 log Method Not Allowed: /api/orders/1/items/
+WARNING 2025-03-12 08:50:41,039 basehttp "GET /api/orders/1/items/ HTTP/1.1" 405 5671
+WARNING 2025-03-12 08:50:57,576 log Method Not Allowed: /api/orders/1/items/1/
+WARNING 2025-03-12 08:50:57,576 basehttp "GET /api/orders/1/items/1/ HTTP/1.1" 405 5895
+INFO 2025-03-12 08:51:05,382 basehttp "GET /api/orders/1/items/1/delete HTTP/1.1" 301 0
+WARNING 2025-03-12 08:51:05,395 log Method Not Allowed: /api/orders/1/items/1/delete/
+WARNING 2025-03-12 08:51:05,396 basehttp "GET /api/orders/1/items/1/delete/ HTTP/1.1" 405 5356
+INFO 2025-03-12 08:51:23,565 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-12 08:51:23,665 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:51:23,724 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-12 08:51:31,789 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-12 08:51:31,825 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:44,782 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-12 08:58:44,823 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-03-12 08:58:44,829 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:46,784 basehttp "GET /admin/api/invoice/ HTTP/1.1" 200 17086
+INFO 2025-03-12 08:58:46,841 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:49,498 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-12 08:58:49,532 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:51,325 basehttp "GET /admin/api/review/ HTTP/1.1" 200 15494
+INFO 2025-03-12 08:58:51,357 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:52,552 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 15803
+INFO 2025-03-12 08:58:52,580 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:54,855 basehttp "GET /admin/api/transaction/ HTTP/1.1" 200 13054
+INFO 2025-03-12 08:58:54,885 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:58:57,283 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-12 08:58:57,308 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 08:59:10,500 basehttp "GET /admin/api/transaction/ HTTP/1.1" 200 13054
+WARNING 2025-03-12 08:59:59,745 log Method Not Allowed: /api/login/
+WARNING 2025-03-12 08:59:59,746 basehttp "GET /api/login/ HTTP/1.1" 405 5575
+WARNING 2025-03-12 09:00:01,165 log Method Not Allowed: /api/login/
+WARNING 2025-03-12 09:00:01,169 basehttp "GET /api/login/ HTTP/1.1" 405 5575
+INFO 2025-03-12 09:00:52,354 basehttp "POST /api/login/ HTTP/1.1" 200 6012
+INFO 2025-03-12 09:01:25,205 basehttp "GET /api/orders/1/items HTTP/1.1" 301 0
+WARNING 2025-03-12 09:01:25,237 log Method Not Allowed: /api/orders/1/items/
+WARNING 2025-03-12 09:01:25,241 basehttp "GET /api/orders/1/items/ HTTP/1.1" 405 5671
+WARNING 2025-03-12 09:01:44,760 log Not Found: /api/orders/1
+WARNING 2025-03-12 09:01:44,766 basehttp "GET /api/orders/1 HTTP/1.1" 404 6168
+INFO 2025-03-12 09:02:00,806 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-12 09:02:04,621 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+INFO 2025-03-12 09:02:26,422 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 200 11411
+INFO 2025-03-12 09:02:38,591 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:02:39,466 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-12 09:02:50,175 log Not Found: /api/kitchenmenuitem/
+WARNING 2025-03-12 09:02:50,175 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 404 5229
+WARNING 2025-03-12 09:02:50,404 log Not Found: /api/kitchenmenuitem/
+WARNING 2025-03-12 09:02:50,411 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 404 5229
+WARNING 2025-03-12 09:02:56,412 log Not Found: /api/kitchenorders/
+WARNING 2025-03-12 09:02:56,413 basehttp "GET /api/kitchenorders/ HTTP/1.1" 404 5223
+WARNING 2025-03-12 09:02:59,664 log Not Found: /api/kitchenorders/
+WARNING 2025-03-12 09:02:59,665 basehttp "GET /api/kitchenorders/ HTTP/1.1" 404 5223
+WARNING 2025-03-12 09:02:59,894 log Not Found: /api/kitchenorders/
+WARNING 2025-03-12 09:02:59,897 basehttp "GET /api/kitchenorders/ HTTP/1.1" 404 5223
+INFO 2025-03-12 09:03:29,545 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:03:30,425 autoreload Watching for file changes with StatReloader
+INFO 2025-03-12 09:03:39,361 basehttp "GET /api/ HTTP/1.1" 200 6293
+WARNING 2025-03-12 09:03:51,609 log Not Found: /
+WARNING 2025-03-12 09:03:51,611 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-12 09:04:03,569 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:04:03,573 basehttp "GET /api/kitchen HTTP/1.1" 404 18065
+INFO 2025-03-12 09:04:06,727 basehttp "GET /api/ HTTP/1.1" 200 6293
+INFO 2025-03-12 09:04:40,005 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:04:40,841 autoreload Watching for file changes with StatReloader
+INFO 2025-03-12 09:04:42,967 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:04:44,320 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-12 09:05:08,008 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:05:08,009 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:05:11,019 log Not Found: /api/
+WARNING 2025-03-12 09:05:11,021 basehttp "GET /api/ HTTP/1.1" 404 5176
+WARNING 2025-03-12 09:05:36,407 log Not Found: /api/
+WARNING 2025-03-12 09:05:36,410 basehttp "GET /api/ HTTP/1.1" 404 5176
+WARNING 2025-03-12 09:05:36,603 log Not Found: /api/
+WARNING 2025-03-12 09:05:36,606 basehttp "GET /api/ HTTP/1.1" 404 5176
+WARNING 2025-03-12 09:05:36,857 log Not Found: /api/
+WARNING 2025-03-12 09:05:36,861 basehttp "GET /api/ HTTP/1.1" 404 5176
+WARNING 2025-03-12 09:05:41,468 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:05:41,469 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:05:41,794 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:05:41,796 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:06:01,074 log Not Found: /api/
+WARNING 2025-03-12 09:06:01,076 basehttp "GET /api/ HTTP/1.1" 404 5176
+INFO 2025-03-12 09:06:41,070 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:06:41,920 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-12 09:06:48,305 log Not Found: /
+WARNING 2025-03-12 09:06:48,305 basehttp "GET / HTTP/1.1" 404 2310
+INFO 2025-03-12 09:06:57,746 basehttp "GET /api/ HTTP/1.1" 200 6293
+WARNING 2025-03-12 09:07:06,242 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:06,248 basehttp "GET /api/kitchen HTTP/1.1" 404 18065
+WARNING 2025-03-12 09:07:07,579 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:07,579 basehttp "GET /api/kitchen HTTP/1.1" 404 18065
+INFO 2025-03-12 09:07:15,620 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\urls.py changed, reloading.
+INFO 2025-03-12 09:07:16,758 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-12 09:07:24,275 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:24,276 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:24,506 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:24,506 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:25,304 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:25,305 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:25,516 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:25,519 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:27,810 log Not Found: /api/
+WARNING 2025-03-12 09:07:27,817 basehttp "GET /api/ HTTP/1.1" 404 5176
+WARNING 2025-03-12 09:07:32,805 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:32,807 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:36,018 log Not Found: /api/kitchen
+WARNING 2025-03-12 09:07:36,021 basehttp "GET /api/kitchen HTTP/1.1" 404 18167
+WARNING 2025-03-12 09:07:39,970 log Not Found: /api/kitchen/
+WARNING 2025-03-12 09:07:39,971 basehttp "GET /api/kitchen/ HTTP/1.1" 404 18170
+WARNING 2025-03-12 09:07:41,708 log Not Found: /api/kitchen/
+WARNING 2025-03-12 09:07:41,709 basehttp "GET /api/kitchen/ HTTP/1.1" 404 18170
+WARNING 2025-03-12 09:07:41,858 log Not Found: /api/kitchen/
+WARNING 2025-03-12 09:07:41,860 basehttp "GET /api/kitchen/ HTTP/1.1" 404 18170
+WARNING 2025-03-12 09:07:42,101 log Not Found: /api/kitchen/
+WARNING 2025-03-12 09:07:42,105 basehttp "GET /api/kitchen/ HTTP/1.1" 404 18170
+INFO 2025-03-12 09:08:42,414 autoreload Watching for file changes with StatReloader
+INFO 2025-03-12 09:08:53,088 basehttp "GET /admin/api/transaction/ HTTP/1.1" 200 13054
+INFO 2025-03-12 09:08:53,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:09:23,583 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-12 09:09:35,262 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+INFO 2025-03-12 09:09:42,966 basehttp "GET /api/kitchensupportticket/ HTTP/1.1" 200 10032
+INFO 2025-03-12 09:09:47,312 basehttp "GET /api/kitchenreview/ HTTP/1.1" 200 10142
+INFO 2025-03-12 09:09:52,074 basehttp "GET /api/users/ HTTP/1.1" 200 11623
+INFO 2025-03-12 09:09:57,826 basehttp "GET /api/kitchenrestaurant/ HTTP/1.1" 200 9686
+INFO 2025-03-12 09:10:04,259 basehttp "GET /api/kitchenmenuitem/ HTTP/1.1" 200 11411
+INFO 2025-03-12 09:10:10,399 basehttp "GET /api/kitchenorders/ HTTP/1.1" 200 10686
+INFO 2025-03-12 09:10:18,699 basehttp "GET /api/kitchenmenucategory/ HTTP/1.1" 200 9817
+INFO 2025-03-12 09:10:28,634 basehttp "GET /api/kitchenreview/ HTTP/1.1" 200 10142
+WARNING 2025-03-12 09:10:40,711 log Not Found: /api/
+WARNING 2025-03-12 09:10:40,713 basehttp "GET /api/ HTTP/1.1" 404 5180
+WARNING 2025-03-12 09:11:06,863 log Not Found: /api/orders
+WARNING 2025-03-12 09:11:06,864 basehttp "GET /api/orders HTTP/1.1" 404 5198
+WARNING 2025-03-12 09:11:15,847 log Not Found: /api/orders/
+WARNING 2025-03-12 09:11:15,849 basehttp "GET /api/orders/ HTTP/1.1" 404 6165
+WARNING 2025-03-12 09:11:49,293 log Not Found: /api/orders
+WARNING 2025-03-12 09:11:49,294 basehttp "GET /api/orders HTTP/1.1" 404 5198
+WARNING 2025-03-12 09:11:55,410 log Not Found: /api/
+WARNING 2025-03-12 09:11:55,412 basehttp "GET /api/ HTTP/1.1" 404 5180
+INFO 2025-03-12 09:11:57,893 basehttp "GET /api/kitchen HTTP/1.1" 200 6433
+INFO 2025-03-12 09:13:55,199 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-12 09:13:55,263 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:13:58,948 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-12 09:13:58,986 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:10,029 basehttp "GET /admin/api/supportticket/ HTTP/1.1" 200 15803
+INFO 2025-03-12 09:14:10,060 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:18,119 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-12 09:14:18,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:20,052 basehttp "GET /admin/api/invoice/ HTTP/1.1" 200 17086
+INFO 2025-03-12 09:14:20,079 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:21,483 basehttp "GET /admin/api/menucategory/ HTTP/1.1" 200 15253
+INFO 2025-03-12 09:14:21,513 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:27,360 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-12 09:14:27,396 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:29,233 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-12 09:14:29,275 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:31,120 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-12 09:14:31,148 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:14:32,898 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 16454
+INFO 2025-03-12 09:14:32,927 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:15:46,961 basehttp "GET /admin/api/payment/1/change/ HTTP/1.1" 200 17655
+INFO 2025-03-12 09:15:46,985 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-03-12 09:15:46,993 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-03-12 09:15:47,004 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-03-12 09:15:47,013 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-03-12 09:15:47,018 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:06,362 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 16454
+INFO 2025-03-12 09:16:10,451 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-12 09:16:10,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:12,098 basehttp "GET /admin/api/invoice/ HTTP/1.1" 200 17086
+INFO 2025-03-12 09:16:12,125 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:15,004 basehttp "GET /admin/api/menucategory/ HTTP/1.1" 200 15253
+INFO 2025-03-12 09:16:15,036 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:15,982 basehttp "GET /admin/api/menuitem/ HTTP/1.1" 200 18020
+INFO 2025-03-12 09:16:16,012 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:17,920 basehttp "GET /admin/api/orderitem/ HTTP/1.1" 200 16105
+INFO 2025-03-12 09:16:17,952 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:19,234 basehttp "GET /admin/api/order/ HTTP/1.1" 200 16641
+INFO 2025-03-12 09:16:19,261 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:20,504 basehttp "GET /admin/api/payment/ HTTP/1.1" 200 16454
+INFO 2025-03-12 09:16:20,528 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-12 09:16:24,852 basehttp "GET /admin/api/restaurant/ HTTP/1.1" 200 14905
+INFO 2025-03-12 09:16:24,877 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:40:05,597 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 12:40:13,603 log Not Found: /
+WARNING 2025-03-14 12:40:13,603 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-14 12:40:13,839 log Not Found: /favicon.ico/
+WARNING 2025-03-14 12:40:13,839 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-14 12:40:22,747 basehttp "GET /admin/ HTTP/1.1" 200 17056
+INFO 2025-03-14 12:40:22,769 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,774 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,777 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,790 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,790 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,795 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,796 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,806 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:22,809 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,381 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 12:40:30,419 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,421 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,431 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,441 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,441 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,447 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,451 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,449 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,449 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,460 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,467 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,503 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:40:30,554 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:30,558 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,399 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 12:40:38,429 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,438 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,443 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:40:38,454 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,560 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-03-14 12:40:38,564 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,573 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-03-14 12:40:38,634 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:40:38,636 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-03-14 12:50:47,108 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 12:50:57,271 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-14 12:50:57,318 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:50:59,433 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-14 12:50:59,469 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:50:59,807 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-14 12:50:59,836 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:00,040 basehttp "GET /admin/api/delivery/ HTTP/1.1" 200 16474
+INFO 2025-03-14 12:51:00,068 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:02,501 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 12:51:02,525 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:04,801 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 12:51:04,831 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:08,153 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 12:51:08,185 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:08,541 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 12:51:08,567 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:15,831 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 12:51:18,299 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 12:51:18,337 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 12:51:26,045 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 12:51:38,026 basehttp "GET /admin/password_change/ HTTP/1.1" 200 12737
+INFO 2025-03-14 12:52:19,850 basehttp "POST /admin/password_change/ HTTP/1.1" 200 13031
+INFO 2025-03-14 12:52:32,388 basehttp "GET /admin/password_change/ HTTP/1.1" 200 12737
+INFO 2025-03-14 12:52:35,855 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 12:52:42,565 basehttp "GET /admin/ HTTP/1.1" 200 17056
+INFO 2025-03-14 14:44:23,634 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 14:44:27,460 log Not Found: /
+WARNING 2025-03-14 14:44:27,463 basehttp "GET / HTTP/1.1" 404 2310
+WARNING 2025-03-14 14:44:27,624 log Not Found: /favicon.ico/
+WARNING 2025-03-14 14:44:27,625 basehttp "GET /favicon.ico/ HTTP/1.1" 404 2364
+INFO 2025-03-14 14:44:32,799 basehttp "GET /admin/ HTTP/1.1" 200 17056
+INFO 2025-03-14 14:44:32,885 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-03-14 14:44:42,277 basehttp "GET /admin/api/user/ HTTP/1.1" 200 16732
+INFO 2025-03-14 14:44:42,330 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 14:44:48,844 basehttp "GET /admin/api/user/2/change/ HTTP/1.1" 200 31741
+INFO 2025-03-14 14:44:48,883 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 14:49:45,916 basehttp "GET /admin/ HTTP/1.1" 200 17056
+WARNING 2025-03-14 14:49:56,720 log Method Not Allowed: /api/login/
+WARNING 2025-03-14 14:49:56,721 basehttp "GET /api/login/ HTTP/1.1" 405 5575
+INFO 2025-03-14 14:49:56,793 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,793 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,801 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,803 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,805 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,807 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,813 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,826 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,875 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,885 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,905 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-03-14 14:49:56,926 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2025-03-14 14:50:13,462 log Method Not Allowed: /api/register/
+WARNING 2025-03-14 14:50:13,463 basehttp "GET /api/register/ HTTP/1.1" 405 5602
+WARNING 2025-03-14 14:50:14,536 log Method Not Allowed: /api/register/
+WARNING 2025-03-14 14:50:14,538 basehttp "GET /api/register/ HTTP/1.1" 405 5602
+INFO 2025-03-14 14:54:35,807 basehttp "POST /api/register/ HTTP/1.1" 201 5991
+INFO 2025-03-14 14:55:04,346 basehttp "GET /admin/api/user/ HTTP/1.1" 200 17190
+INFO 2025-03-14 14:55:04,392 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 14:55:08,045 basehttp "GET /admin/api/user/3/change/ HTTP/1.1" 200 31387
+INFO 2025-03-14 14:55:08,084 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 15:00:08,619 basehttp "GET /admin/api/user/ HTTP/1.1" 200 17190
+INFO 2025-03-14 15:00:11,225 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 15:00:11,271 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-14 15:04:14,463 log Not Found: /api/
+WARNING 2025-03-14 15:04:14,464 basehttp "GET /api/ HTTP/1.1" 404 5180
+WARNING 2025-03-14 15:04:25,699 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 15:04:25,699 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-14 15:04:28,582 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 15:04:28,582 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-14 15:05:39,870 basehttp "GET /admin/api/user/ HTTP/1.1" 200 17190
+INFO 2025-03-14 15:05:39,912 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 15:05:41,985 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31758
+INFO 2025-03-14 15:05:42,029 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 15:22:09,416 basehttp "GET /admin/api/user/ HTTP/1.1" 200 17190
+INFO 2025-03-14 15:41:18,571 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:41:20,145 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:49:46,318 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:49:47,230 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:50:43,579 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:50:45,018 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:54:11,632 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-14 15:54:16,514 log Internal Server Error: /api/forgot-password/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 134, in post
+    html_message = render_to_string(
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'render_to_string' is not defined
+ERROR 2025-03-14 15:54:16,531 basehttp "POST /api/forgot-password/ HTTP/1.1" 500 114715
+INFO 2025-03-14 15:55:03,998 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:55:05,092 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:55:07,700 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:55:09,082 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:55:15,492 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:55:16,507 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 15:55:26,120 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 15:55:26,120 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+ERROR 2025-03-14 15:57:10,252 log Internal Server Error: /api/forgot-password/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 135, in post
+    html_message = render_to_string(
+                   ^^^^^^^^^^^^^^^^
+NameError: name 'render_to_string' is not defined
+ERROR 2025-03-14 15:57:10,267 basehttp "POST /api/forgot-password/ HTTP/1.1" 500 114715
+INFO 2025-03-14 15:58:20,780 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 15:58:21,812 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 15:59:12,943 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 15:59:31,403 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 15:59:31,403 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-14 15:59:32,135 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 15:59:32,137 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-14 16:01:23,298 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+WARNING 2025-03-14 16:07:27,147 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 16:07:27,148 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-14 16:09:32,271 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+INFO 2025-03-14 16:13:36,215 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:13:37,134 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:13:39,400 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:13:40,714 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:13:43,321 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:13:44,275 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:14:02,139 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:14:02,838 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:17:32,328 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:17:33,204 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:17:36,261 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:17:37,121 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:17:42,350 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:17:43,208 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:17:58,113 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:17:59,088 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:02,514 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:03,905 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:07,648 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:08,502 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:11,672 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:12,621 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:16,816 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:18,447 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:22,827 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:23,706 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:25,907 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:27,272 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:31,875 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:33,629 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:42,338 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:43,866 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:49,054 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:50,461 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:53,501 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:54,510 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:18:57,218 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:18:58,118 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:19:02,933 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:19:03,772 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:19:20,438 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:19:21,287 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:19:26,692 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:19:27,599 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:19:38,124 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:19:38,997 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:19:44,223 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:19:45,127 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:06,161 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:07,088 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:09,791 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:10,574 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:14,658 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:15,902 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:19,052 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:19,882 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:22,660 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:23,535 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:29,804 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:30,938 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:35,152 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:35,974 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:38,110 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:38,924 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:47,999 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:49,237 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:20:54,232 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:20:55,460 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:02,466 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:03,249 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:08,626 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:09,970 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:17,055 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:18,222 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:21,694 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:23,167 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:25,612 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:26,447 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:43,235 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:44,083 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:21:48,266 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:21:49,138 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:04,602 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:05,747 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:10,140 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:10,952 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:19,507 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:20,348 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:25,567 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:26,557 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:31,131 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:31,915 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:45,626 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:46,472 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:26:54,250 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:26:55,058 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:27:42,453 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:27:43,277 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:28:33,525 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:28:34,407 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:28:36,599 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:28:37,650 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-14 16:29:10,348 log Internal Server Error: /api/forgot-password/
+Traceback (most recent call last):
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py", line 97, in post
+    send_mail(
+TypeError: send_mail() got multiple values for argument 'fail_silently'
+ERROR 2025-03-14 16:29:10,350 basehttp "POST /api/forgot-password/ HTTP/1.1" 500 114879
+INFO 2025-03-14 16:35:05,773 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:35:07,052 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:35:40,433 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:35:41,394 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:36:18,541 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:36:19,819 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:36:22,295 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:36:23,147 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 16:38:47,076 log Method Not Allowed: /api/register/
+WARNING 2025-03-14 16:38:47,077 basehttp "GET /api/register/ HTTP/1.1" 405 5602
+WARNING 2025-03-14 16:39:51,091 log Not Found: /api/
+WARNING 2025-03-14 16:39:51,096 basehttp "GET /api/ HTTP/1.1" 404 5180
+WARNING 2025-03-14 16:39:53,449 log Not Found: /api/
+WARNING 2025-03-14 16:39:53,449 basehttp "GET /api/ HTTP/1.1" 404 5180
+WARNING 2025-03-14 16:40:07,207 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 16:40:07,209 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+WARNING 2025-03-14 16:40:08,264 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 16:40:08,264 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-14 16:41:50,864 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+WARNING 2025-03-14 16:42:35,231 log Not Found: /api//reset-password/MQ/cmnydm-f90d64de84333e2cbbdc0694d2b06f03/
+WARNING 2025-03-14 16:42:35,232 basehttp "GET /api//reset-password/MQ/cmnydm-f90d64de84333e2cbbdc0694d2b06f03/ HTTP/1.1" 404 5357
+INFO 2025-03-14 16:44:23,393 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:44:24,204 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:45:51,063 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:45:51,899 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:07,623 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:08,775 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:11,238 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:12,302 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:15,145 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:16,503 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:20,056 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:20,878 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:36,579 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:37,453 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:46:58,773 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:46:59,552 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:47:02,863 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:47:03,644 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-14 16:48:28,058 log Bad Request: /api/forgot-password/
+WARNING 2025-03-14 16:48:28,060 basehttp "POST /api/forgot-password/ HTTP/1.1" 400 3765
+WARNING 2025-03-14 16:48:35,457 log Method Not Allowed: /api/forgot-password/
+WARNING 2025-03-14 16:48:35,457 basehttp "GET /api/forgot-password/ HTTP/1.1" 405 5665
+INFO 2025-03-14 16:49:52,791 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:49:53,674 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:49:57,162 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:49:58,027 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:50:56,459 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:50:57,590 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:51:07,840 basehttp "POST /api/forgot-password/ HTTP/1.1" 200 5652
+WARNING 2025-03-14 16:51:38,412 log Method Not Allowed: /api/reset-password/MQ/cmnyt3-e9fe63f94c9621fa900368011146bc6b/
+WARNING 2025-03-14 16:51:38,415 basehttp "GET /api/reset-password/MQ/cmnyt3-e9fe63f94c9621fa900368011146bc6b/ HTTP/1.1" 405 5828
+INFO 2025-03-14 16:52:24,475 basehttp "POST /api/reset-password/MQ/cmnyt3-e9fe63f94c9621fa900368011146bc6b/ HTTP/1.1" 200 5804
+INFO 2025-03-14 16:52:45,664 basehttp "GET /admin/api/user/ HTTP/1.1" 302 0
+INFO 2025-03-14 16:52:45,709 basehttp "GET /admin/login/?next=/admin/api/user/ HTTP/1.1" 200 4182
+INFO 2025-03-14 16:52:45,754 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-03-14 16:53:06,219 basehttp "POST /admin/login/?next=/admin/api/user/ HTTP/1.1" 302 0
+INFO 2025-03-14 16:53:06,283 basehttp "GET /admin/api/user/ HTTP/1.1" 200 17190
+INFO 2025-03-14 16:53:06,353 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 16:53:09,257 basehttp "GET /admin/api/user/1/change/ HTTP/1.1" 200 31782
+INFO 2025-03-14 16:53:09,293 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-14 16:53:40,314 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:53:41,234 autoreload Watching for file changes with StatReloader
+INFO 2025-03-14 16:53:45,860 autoreload E:\Cloud_Kitchen_pro\cloudkitchen\api\views.py changed, reloading.
+INFO 2025-03-14 16:53:46,654 autoreload Watching for file changes with StatReloader

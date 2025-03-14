@@ -82,6 +82,7 @@ class ForgotPasswordView(APIView):
     def post(self, request):
         email = request.data.get('email')
         frontend_url = request.data.get('frontend_url')  
+       
 
         if not frontend_url:
             return Response(
@@ -93,14 +94,27 @@ class ForgotPasswordView(APIView):
         if user:
             token = default_token_generator.make_token(user)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
-            reset_link = f"{frontend_url}/reset-password/{uid}/{token}/"
-            send_mail(
-                'Password Reset Request',
-                f'Click the link to reset your password: {reset_link}',
-                settings.DEFAULT_FROM_EMAIL,  
-                [user.email],  
-                fail_silently=False,
+            reset_link = f"{frontend_url}reset-password/{uid}/{token}/"
+
+             # Plain text email message
+            message = (
+                f"Hello! {user.username},\n\n"
+                f"We received a request to reset your password for your Cloud Kitchen account.\n\n"
+                f"If you did not request a password reset, please ignore this email.\n\n"
+                f"Click the link to reset your password: {reset_link}.\n\n"
+                f"Thank you,\n"
+                f"Cloud Kitchen Team"
             )
+
+            # Send the email
+            send_mail(
+                subject='Password Reset Request - Cloud Kitchen',  # Email subject
+                message=message,  # Plain text message
+                from_email=settings.DEFAULT_FROM_EMAIL,  # From email address
+                recipient_list=[user.email],  # To email address
+                fail_silently=False,  # Do not fail silently
+            )
+
 
             return Response(
                 {'message': 'Password reset link sent to your email'}, 
@@ -111,6 +125,10 @@ class ForgotPasswordView(APIView):
             status=status.HTTP_400_BAD_REQUEST
         )
 from django.utils.http import urlsafe_base64_decode
+
+
+
+
 class ResetPasswordView(APIView):
     @method_decorator(csrf_protect)
     def post(self, request, uidb64, token):

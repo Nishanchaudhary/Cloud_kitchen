@@ -14,15 +14,15 @@ router.register(r'supportticket', SupportTicketViewSet)
 router.register(r'review', ReviewViewSet)
 
 custom_urlpatterns = [
-    path('orders/<int:order_id>/items/', OrderItemCreateView.as_view(), name='order-item-create'),
-    path('orders/<int:order_id>/items/<int:item_id>/', OrderItemUpdateView.as_view(), name='order-item-update'),
-    path('orders/<int:order_id>/items/<int:item_id>/delete/', OrderItemDeleteView.as_view(), name='order-item-delete'),
+    path('<int:order_id>/items/', OrderItemCreateView.as_view(), name='order-item-create'),
+    path('<int:order_id>/items/<int:item_id>/', OrderItemUpdateView.as_view(), name='order-item-update'),
+    path('<int:order_id>/items/<int:item_id>/delete/', OrderItemDeleteView.as_view(), name='order-item-delete'),
 ]
 
 
 urlpatterns = [
     path('kitchen', include(router.urls)),
-    path('orders', include(custom_urlpatterns)),
+    path('orders/', include(custom_urlpatterns)),
     path('users/', UserViewSet.as_view({'get': 'list', 'post': 'create'}), name='user-list'),
     path('register/', RegisterView.as_view(), name='register'),
     path('login/', LoginView.as_view(), name='login'),
