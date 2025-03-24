@@ -1,6 +1,6 @@
 # Cloud Kitchen
 
-Cloud Kitchen is a Django-based web application designed to manage online food orders, restaurants, menus, and customer interactions efficiently. This system provides a robust admin dashboard, and user authentication features.
+Cloud Kitchen is a Django-based web application designed to manage online food orders, restaurants, menus, and customer interactions efficiently. This system provides a robust admin dashboard, and user authentication features [CloudKitchen Live view](https://cfztvc-8000.csb.app/api/kitchen)
 
 ## Features
 
